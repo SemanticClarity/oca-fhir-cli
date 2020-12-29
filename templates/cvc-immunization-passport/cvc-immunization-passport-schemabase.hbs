@@ -30,22 +30,21 @@
   "@type": "@id"
 },
 "conformance-payload": {{{getConformancePayload @root}}}
-{{#if (hasBITdefined @root.resourceType)}}
+{{~#if (hasBITdefined @root.resourceType)~}}
  , 
 "pii_attributes": [{{{getBITProperties @root.resourceType}}}]
-{{/if}}
+{{~/if~}}
  ,
 "pii_attribute_refs": 
     [
     {{#each entry}} 
         {{#if (hasBITdefined resourceType)}}
-            {{#if @last}} 
+            {{#if @first}} 
                 {{{getBITProperties resourceType}}}
             {{else}}
-                {{{getBITProperties resourceType}}},
+                ,{{{getBITProperties resourceType}}}
             {{/if}}
         {{/if}}
-    {{/each}}
+    {{~/each~}}
     ]
-
 }

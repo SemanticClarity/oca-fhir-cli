@@ -1,0 +1,23 @@
+{
+"@context": {
+"@vocab" : "http://hl7.org/fhir/",
+"@version": 1.1,
+"domain": {"@type": "@vocab"}
+},
+"name": "{{@root.resourceType}}",
+"ocatype": "{{@oca-artifact-type}}",
+"conformance-type": "{{@fhir-profile-ref}}",
+"conformance-spec": "{{@fhir-profile-uri}}",
+"description": "FHIR {{type}} resource json object transformed to OCA Format Overlay for CVC Immunization Passport",
+"classification": ["{{@umls-cui}}", "GICS:351030"],
+"issued_by": "{{@author}}",
+"schema_base": "{{@schemabase-hashlink}}",
+"purpose": {
+  "@id": "{{@dpv-purpose}}",
+  "@type": "@id"
+ }
+ {{#if (hasEntryOverlay properties.resourceType.const)}}
+, 
+"attr_entries": {{{getEntryOverlay properties.resourceType.const}}}
+{{/if}}
+}

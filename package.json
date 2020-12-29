@@ -12,6 +12,8 @@
     "fhirpath.js": "^0.0.6",
     "handlebars": "^4.7.6",
     "handlebars-helpers-fhir": "^0.0.8",
-    "hashlink": "^0.12.1"
+    "hashlink": "^0.12.1",
+    "node-cache": "^5.1.2",
+    "recursive-readdir": "^2.2.2"
   }
 }

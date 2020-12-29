@@ -2,6 +2,7 @@ const fs = require('fs');
 var hbs = require('./lib/hbs-utils.js');
 var Handlebars = require("handlebars");
 const fhirpath = require('fhirpath.js');
+const hashlinkutil = require('./lib/hashlink-utils');
 
 /*
 
@@ -51,7 +52,12 @@ const main = async()=> {
         "dpv-purpose": "dpv:MedicalHealth"
     }
     });
-    console.log(result.toString());
+    
+    var resourcename = 'oca-cvc-immunization-passport';
+    fs.writeFileSync(`oca-artifacts/schema-base/${resourcename}.jsonld`, result);
+    var hashlinkstr;
+    hashlinkstr = await hashlinkutil.getHashlink(`oca-artifacts/schema-base/${resourcename}.jsonld`);
+    console.log(hashlinkstr);
   
 }
 
