@@ -1,0 +1,11 @@
+{
+  "resourceName": "ImmunizationRecommendation_DateCriterion",
+  "attr_character_encoding": {
+    "ImmunizationRecommendation_DateCriterion.extension": "utf-8",
+    "ImmunizationRecommendation_DateCriterion.modifierExtension": "utf-8",
+    "ImmunizationRecommendation_DateCriterion.code": "utf-8",
+    "ImmunizationRecommendation_DateCriterion._value": "utf-8",
+    "ImmunizationRecommendation_DateCriterion.id": "utf-8",
+    "ImmunizationRecommendation_DateCriterion.value": "utf-8"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "resourceName": "Contract_Answer",
+  "attr_character_encoding": {
+    "Contract_Answer.valueInteger": "utf-8",
+    "Contract_Answer._valueTime": "utf-8",
+    "Contract_Answer._valueString": "utf-8",
+    "Contract_Answer.valueAttachment": "utf-8",
+    "Contract_Answer.modifierExtension": "utf-8",
+    "Contract_Answer.valueDecimal": "utf-8",
+    "Contract_Answer.valueBoolean": "utf-8",
+    "Contract_Answer.valueUri": "utf-8",
+    "Contract_Answer._valueBoolean": "utf-8",
+    "Contract_Answer.id": "utf-8",
+    "Contract_Answer._valueDecimal": "utf-8",
+    "Contract_Answer.valueQuantity": "utf-8",
+    "Contract_Answer.valueDateTime": "utf-8",
+    "Contract_Answer.extension": "utf-8",
+    "Contract_Answer._valueUri": "utf-8",
+    "Contract_Answer.valueReference": "utf-8",
+    "Contract_Answer.valueCoding": "utf-8",
+    "Contract_Answer.valueString": "utf-8",
+    "Contract_Answer._valueDate": "utf-8",
+    "Contract_Answer.valueDate": "utf-8",
+    "Contract_Answer.valueTime": "utf-8",
+    "Contract_Answer._valueDateTime": "utf-8",
+    "Contract_Answer._valueInteger": "utf-8"
+  }
+}

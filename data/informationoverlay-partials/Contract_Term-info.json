@@ -1,0 +1,23 @@
+{
+  "resourceName": "Contract_Term",
+  "attr_information": {
+    "Contract_Term.topicCodeableConcept": "The entity that the term applies to.",
+    "Contract_Term.offer": "The matter of concern in the context of this provision of the agrement.",
+    "Contract_Term.id": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+    "Contract_Term.applies": "Relevant time or time-period when this Contract Provision is applicable.",
+    "Contract_Term.extension": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+    "Contract_Term.identifier": "Unique identifier for this particular Contract Provision.",
+    "Contract_Term.securityLabel": "Security labels that protect the handling of information about the term and its elements, which may be specifically identified..",
+    "Contract_Term.topicReference": "The entity that the term applies to.",
+    "Contract_Term.type": "A legal clause or condition contained within a contract that requires one or both parties to perform a particular requirement by some specified time or prevents one or both parties from performing a particular requirement by some specified time.",
+    "Contract_Term.asset": "Contract Term Asset List.",
+    "Contract_Term._issued": "Extensions for issued",
+    "Contract_Term.group": "Nested group of Contract Provisions.",
+    "Contract_Term._text": "Extensions for text",
+    "Contract_Term.modifierExtension": "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element\u0027s descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+    "Contract_Term.action": "An actor taking a role in an activity for which it can be assigned some degree of responsibility for the activity taking place.",
+    "Contract_Term.issued": "When this Contract Provision was issued.",
+    "Contract_Term.subType": "A specialized legal clause or condition based on overarching contract type.",
+    "Contract_Term.text": "Statement of a provision in a policy or a contract."
+  }
+}

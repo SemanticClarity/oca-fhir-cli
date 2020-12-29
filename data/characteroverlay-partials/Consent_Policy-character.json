@@ -1,0 +1,12 @@
+{
+  "resourceName": "Consent_Policy",
+  "attr_character_encoding": {
+    "Consent_Policy.id": "utf-8",
+    "Consent_Policy._authority": "utf-8",
+    "Consent_Policy.extension": "utf-8",
+    "Consent_Policy.modifierExtension": "utf-8",
+    "Consent_Policy._uri": "utf-8",
+    "Consent_Policy.authority": "utf-8",
+    "Consent_Policy.uri": "utf-8"
+  }
+}

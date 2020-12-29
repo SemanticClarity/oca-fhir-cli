@@ -1,0 +1,15 @@
+{
+  "resourceName": "Practitioner",
+  "pii_attributes": [
+    "Practitioner.gender",
+    "Practitioner.active",
+    "Practitioner.photo",
+    "Practitioner.name",
+    "Practitioner.birthDate",
+    "Practitioner.communication",
+    "Practitioner.address",
+    "Practitioner.identifier",
+    "Practitioner.qualification",
+    "Practitioner.telecom"
+  ]
+}

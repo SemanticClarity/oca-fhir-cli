@@ -1,0 +1,12 @@
+{
+  "resourceName": "Bundle_Search",
+  "attr_character_encoding": {
+    "Bundle_Search._mode": "utf-8",
+    "Bundle_Search.score": "utf-8",
+    "Bundle_Search.modifierExtension": "utf-8",
+    "Bundle_Search._score": "utf-8",
+    "Bundle_Search.mode": "utf-8",
+    "Bundle_Search.id": "utf-8",
+    "Bundle_Search.extension": "utf-8"
+  }
+}

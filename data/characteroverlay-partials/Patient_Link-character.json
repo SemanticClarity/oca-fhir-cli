@@ -1,0 +1,11 @@
+{
+  "resourceName": "Patient_Link",
+  "attr_character_encoding": {
+    "Patient_Link.id": "utf-8",
+    "Patient_Link.extension": "utf-8",
+    "Patient_Link.type": "utf-8",
+    "Patient_Link.other": "utf-8",
+    "Patient_Link.modifierExtension": "utf-8",
+    "Patient_Link._type": "utf-8"
+  }
+}

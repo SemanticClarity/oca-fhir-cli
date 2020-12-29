@@ -1,0 +1,10 @@
+{
+  "resourceName": "Contract_Friendly",
+  "attr_character_encoding": {
+    "Contract_Friendly.modifierExtension": "utf-8",
+    "Contract_Friendly.contentAttachment": "utf-8",
+    "Contract_Friendly.extension": "utf-8",
+    "Contract_Friendly.id": "utf-8",
+    "Contract_Friendly.contentReference": "utf-8"
+  }
+}

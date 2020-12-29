@@ -1,0 +1,11 @@
+{
+  "resourceName": "Contract_Signer",
+  "attr_character_encoding": {
+    "Contract_Signer.id": "utf-8",
+    "Contract_Signer.signature": "utf-8",
+    "Contract_Signer.type": "utf-8",
+    "Contract_Signer.extension": "utf-8",
+    "Contract_Signer.party": "utf-8",
+    "Contract_Signer.modifierExtension": "utf-8"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "resourceName": "Consent_Provision",
+  "attr_character_encoding": {
+    "Consent_Provision.purpose": "utf-8",
+    "Consent_Provision.data": "utf-8",
+    "Consent_Provision.action": "utf-8",
+    "Consent_Provision.code": "utf-8",
+    "Consent_Provision.class": "utf-8",
+    "Consent_Provision.modifierExtension": "utf-8",
+    "Consent_Provision.type": "utf-8",
+    "Consent_Provision.actor": "utf-8",
+    "Consent_Provision.securityLabel": "utf-8",
+    "Consent_Provision._type": "utf-8",
+    "Consent_Provision.provision": "utf-8",
+    "Consent_Provision.period": "utf-8",
+    "Consent_Provision.dataPeriod": "utf-8",
+    "Consent_Provision.id": "utf-8",
+    "Consent_Provision.extension": "utf-8"
+  }
+}

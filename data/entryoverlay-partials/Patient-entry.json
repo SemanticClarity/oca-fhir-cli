@@ -1,0 +1,23 @@
+{
+  "resourceName": "Patient",
+  "attr_entries": {
+    "Patient.link.type": [
+      "replaced-by ",
+      " replaces ",
+      " refer ",
+      " seealso"
+    ],
+    "Patient.contact.gender": [
+      "male ",
+      " female ",
+      " other ",
+      " unknown"
+    ],
+    "Patient.gender": [
+      "male ",
+      " female ",
+      " other ",
+      " unknown"
+    ]
+  }
+}

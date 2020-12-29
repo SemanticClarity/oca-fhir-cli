@@ -1,0 +1,27 @@
+{
+  "resourceName": "Contract_Asset",
+  "attr_character_encoding": {
+    "Contract_Asset.usePeriod": "utf-8",
+    "Contract_Asset.type": "utf-8",
+    "Contract_Asset.relationship": "utf-8",
+    "Contract_Asset.valuedItem": "utf-8",
+    "Contract_Asset.answer": "utf-8",
+    "Contract_Asset.modifierExtension": "utf-8",
+    "Contract_Asset.linkId": "utf-8",
+    "Contract_Asset.condition": "utf-8",
+    "Contract_Asset.period": "utf-8",
+    "Contract_Asset.scope": "utf-8",
+    "Contract_Asset.typeReference": "utf-8",
+    "Contract_Asset._securityLabelNumber": "utf-8",
+    "Contract_Asset._text": "utf-8",
+    "Contract_Asset._linkId": "utf-8",
+    "Contract_Asset._condition": "utf-8",
+    "Contract_Asset.subtype": "utf-8",
+    "Contract_Asset.id": "utf-8",
+    "Contract_Asset.extension": "utf-8",
+    "Contract_Asset.context": "utf-8",
+    "Contract_Asset.periodType": "utf-8",
+    "Contract_Asset.securityLabelNumber": "utf-8",
+    "Contract_Asset.text": "utf-8"
+  }
+}

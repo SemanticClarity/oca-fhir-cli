@@ -1,0 +1,9 @@
+{
+  "resourceName": "Immunization_ProtocolApplied",
+  "attr_formats": {
+    "Immunization_ProtocolApplied.doseNumberString": "^[ \\r\\n\\t\\S]+$",
+    "Immunization_ProtocolApplied.seriesDosesString": "^[ \\r\\n\\t\\S]+$",
+    "Immunization_ProtocolApplied.doseNumberPositiveInt": "^[1-9][0-9]*$",
+    "Immunization_ProtocolApplied.seriesDosesPositiveInt": "^[1-9][0-9]*$"
+  }
+}

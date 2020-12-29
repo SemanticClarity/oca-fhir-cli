@@ -1,0 +1,33 @@
+{
+"@context": {
+"@vocab" : "http://hl7.org/fhir/",
+"@version": 1.1,
+"domain": {"@type": "@vocab"},
+"dpv": "http://www.w3.org/ns/dpv#",
+"dpv-gdpr": "http://www.w3.org/ns/dpv-gdpr#",
+"dpv-nace": "http://www.w3.org/ns/dpv-nace#"
+},
+"name": "{{type}}",
+"type": "spec/schema_base/1.0",
+"conformance-type": "{{@fhir-profile-ref}}",
+"conformance-spec": "{{@fhir-profile-uri}}",
+"attributes": { 
+    {{#each}} {{entry}}
+    [
+        {{#if @last}} 
+        "{{entry.resourceType}}"
+        {{else}}
+        "{{entry.resourceType}}",
+        {{/if}}
+    ]
+    {{/each}}
+},
+"description": "FHIR {{type}} resource json object transformed to jsonld {{@oca-artifact-type}} for OCA",
+"classification": ["{{@umls-cui}}", "GICS:351030"],
+"issued_by": "{{@author}}",
+"purpose": {
+  "@id": "{{@dpv-purpose}}",
+  "@type": "@id"
+},
+"conformance-payload": {{this}}
+}

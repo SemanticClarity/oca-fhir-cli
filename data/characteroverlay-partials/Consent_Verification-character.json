@@ -1,0 +1,13 @@
+{
+  "resourceName": "Consent_Verification",
+  "attr_character_encoding": {
+    "Consent_Verification.modifierExtension": "utf-8",
+    "Consent_Verification.extension": "utf-8",
+    "Consent_Verification._verified": "utf-8",
+    "Consent_Verification.verifiedWith": "utf-8",
+    "Consent_Verification._verificationDate": "utf-8",
+    "Consent_Verification.verified": "utf-8",
+    "Consent_Verification.id": "utf-8",
+    "Consent_Verification.verificationDate": "utf-8"
+  }
+}
