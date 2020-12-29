@@ -10,6 +10,8 @@
     "fhir": "^4.7.11",
     "fhirpath": "^2.7.1",
     "fhirpath.js": "^0.0.6",
+    "handlebars": "^4.7.6",
+    "handlebars-helpers-fhir": "^0.0.8",
     "hashlink": "^0.12.1"
   }
 }

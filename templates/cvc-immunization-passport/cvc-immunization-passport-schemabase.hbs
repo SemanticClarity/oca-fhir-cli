@@ -7,21 +7,21 @@
 "dpv-gdpr": "http://www.w3.org/ns/dpv-gdpr#",
 "dpv-nace": "http://www.w3.org/ns/dpv-nace#"
 },
-"name": "{{type}}",
+"name": "{{@root.resourceType}}",
 "type": "spec/schema_base/1.0",
 "conformance-type": "{{@fhir-profile-ref}}",
 "conformance-spec": "{{@fhir-profile-uri}}",
-"attributes": { 
-    {{#each}} {{entry}}
+"attribute_refs": 
     [
+    {{#each entry}} 
         {{#if @last}} 
-        "{{entry.resourceType}}"
+        "{{resourceType}}"
         {{else}}
-        "{{entry.resourceType}}",
+        "{{resourceType}}",
         {{/if}}
-    ]
     {{/each}}
-},
+    ]
+,
 "description": "FHIR {{type}} resource json object transformed to jsonld {{@oca-artifact-type}} for OCA",
 "classification": ["{{@umls-cui}}", "GICS:351030"],
 "issued_by": "{{@author}}",
@@ -29,5 +29,23 @@
   "@id": "{{@dpv-purpose}}",
   "@type": "@id"
 },
-"conformance-payload": {{this}}
+"conformance-payload": {{{getConformancePayload @root}}}
+{{#if (hasBITdefined @root.resourceType)}}
+ , 
+"pii_attributes": [{{{getBITProperties @root.resourceType}}}]
+{{/if}}
+ ,
+"pii_attribute_refs": 
+    [
+    {{#each entry}} 
+        {{#if (hasBITdefined resourceType)}}
+            {{#if @last}} 
+                {{{getBITProperties resourceType}}}
+            {{else}}
+                {{{getBITProperties resourceType}}},
+            {{/if}}
+        {{/if}}
+    {{/each}}
+    ]
+
 }
