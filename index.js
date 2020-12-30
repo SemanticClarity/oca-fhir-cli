@@ -11,7 +11,7 @@ var ParseConformance = require('fhir').ParseConformance;
 var FhirVersions = require('fhir').Versions;
 */
 function generateOCAFormatOverlay(immnzpassportdoc, context, schemabase_hashlink) {
-  const formathbs = fs.readFileSync('templates/oca-overlays/oca-fhir-format-overlay.hbs', 'utf-8');
+  const formathbs = fs.readFileSync('templates/cvc-immunization-passport/cvc-immunization-passport-formatoverlay.hbs', 'utf-8');
   const compiled_template = Handlebars.compile(formathbs);
   var result = compiled_template(immnzpassportdoc,{
       "data": {
@@ -131,6 +131,8 @@ const main = async()=> {
     var hashlinkstr;
     hashlinkstr = await hashlinkutil.getHashlink(`oca-artifacts/schema-base/${context}.jsonld`);
     generateOCAEntryOverlay(patientpassport,context,hashlinkstr);
+    generateOCAFormatOverlay(patientpassport,context,hashlinkstr);
+    generateOCAInformationOverlay(patientpassport,context,hashlinkstr);
   
 }
 
