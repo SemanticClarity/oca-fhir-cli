@@ -106,12 +106,7 @@ const main = async()=> {
   */
   var cvcimmunizationdoc = fs.readFileSync('examples/cvc-immunizationpassport/patient-bundle-instance-example.json');
   var patientpassport = await JSON.parse(cvcimmunizationdoc);
-  if (fhirpath.evaluate(patientpassport, 'Bundle.where(type = \'collection\')')) {
-    var retval = fhirpath.evaluate(patientpassport, 'Bundle.entry.resourceType');
-    for (var loop = 0; loop < retval.length; loop++) {
-      console.log("retval["+loop+"]: "+ retval[loop]);
-    }
-  }
+  
   const bundlehbs = fs.readFileSync('templates/cvc-immunization-passport/cvc-immunization-passport-schemabase.hbs', 'utf-8');
   const compiled_template = Handlebars.compile(bundlehbs);
   var result = compiled_template(patientpassport,{
@@ -133,7 +128,7 @@ const main = async()=> {
     generateOCAEntryOverlay(patientpassport,context,hashlinkstr);
     generateOCAFormatOverlay(patientpassport,context,hashlinkstr);
     generateOCAInformationOverlay(patientpassport,context,hashlinkstr);
-  
+    generateOCACharacterOverlay(patientpassport,context,hashlinkstr);
 }
 
 main();
