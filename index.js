@@ -10,6 +10,79 @@ var Fhir = require('fhir').Fhir;
 var ParseConformance = require('fhir').ParseConformance;
 var FhirVersions = require('fhir').Versions;
 */
+function generateOCAFormatOverlay(immnzpassportdoc, context, schemabase_hashlink) {
+  const formathbs = fs.readFileSync('templates/oca-overlays/oca-fhir-format-overlay.hbs', 'utf-8');
+  const compiled_template = Handlebars.compile(formathbs);
+  var result = compiled_template(immnzpassportdoc,{
+      "data": {
+          "author": "FHIR OCA WG",
+          "umls-cui": "UMLS:C0008960",
+          "fhir-profile-ref": "CA-Core",
+          "fhir-profile-uri": "http://hl7.org/fhir/ca/core/StructureDefinition/",
+          "oca-artifact-type": "spec/overlay/format/1.0",
+          "dpv-purpose": "dpv:MedicalHealth",
+          "schemabase-hashlink": schemabase_hashlink
+      }
+  
+  });
+  fs.writeFileSync(`oca-artifacts/format-overlay/${context}-format.jsonld`, result);
+}
+
+function generateOCAEntryOverlay(immnzpassportdoc, context, schemabase_hashlink) {
+  const entryhbs = fs.readFileSync('templates/cvc-immunization-passport/cvc-immunization-passport-entryoverlay.hbs', 'utf-8');
+  const compiled_template = Handlebars.compile(entryhbs);
+  var result = compiled_template(immnzpassportdoc,{
+      "data": {
+          "author": "FHIR OCA WG",
+          "umls-cui": "UMLS:C0008960",
+          "fhir-profile-ref": "CA-Core",
+          "fhir-profile-uri": "http://hl7.org/fhir/ca/core/StructureDefinition/",
+          "oca-artifact-type": "spec/overlay/entry/1.0",
+          "dpv-purpose": "dpv:MedicalHealth",
+          "schemabase-hashlink": schemabase_hashlink
+      }
+  
+  });
+  fs.writeFileSync(`oca-artifacts/entry-overlay/${context}-entry.jsonld`, result);
+}
+
+function generateOCACharacterOverlay(immnzpassportdoc, context, schemabase_hashlink) {
+  const formathbs = fs.readFileSync('templates/cvc-immunization-passport/cvc-immunization-passport-characteroverlay.hbs', 'utf-8');
+  const compiled_template = Handlebars.compile(formathbs);
+  var result = compiled_template(immnzpassportdoc,{
+      "data": {
+          "author": "FHIR OCA WG",
+          "umls-cui": "UMLS:C0008960",
+          "role": "TBD",
+          "fhir-profile-ref": "CA-Core",
+          "fhir-profile-uri": "http://hl7.org/fhir/ca/core/StructureDefinition/",
+          "oca-artifact-type": "spec/overlay/character_encoding/1.0",
+          "dpv-purpose": "dpv:MedicalHealth",
+          "schemabase-hashlink": schemabase_hashlink
+      }
+  
+  });
+  fs.writeFileSync(`oca-artifacts/character-overlay/${context}-character.jsonld`, result);
+}
+
+function generateOCAInformationOverlay(immnzpassportdoc, context, schemabase_hashlink) {
+  const informationhbs = fs.readFileSync('templates/cvc-immunization-passport/cvc-immunization-passport-informationoverlay.hbs', 'utf-8');
+  const compiled_template = Handlebars.compile(informationhbs);
+  var result = compiled_template(immnzpassportdoc,{
+      "data": {
+          "author": "FHIR OCA WG",
+          "umls-cui": "UMLS:C0008960",
+          "role": "TBD",
+          "fhir-profile-ref": "CA-Core",
+          "fhir-profile-uri": "http://hl7.org/fhir/ca/core/StructureDefinition/",
+          "oca-artifact-type": "spec/overlay/information/1.0",
+          "dpv-purpose": "dpv:MedicalHealth",
+          "schemabase-hashlink": schemabase_hashlink
+      }
+  
+  });
+  fs.writeFileSync(`oca-artifacts/information-overlay/${context}-information.jsonld`, result);
+}
 
 const main = async()=> {
   /*
@@ -53,11 +126,11 @@ const main = async()=> {
     }
     });
     
-    var resourcename = 'oca-cvc-immunization-passport';
-    fs.writeFileSync(`oca-artifacts/schema-base/${resourcename}.jsonld`, result);
+    var context = 'oca-cvc-immunization-passport';
+    fs.writeFileSync(`oca-artifacts/schema-base/${context}.jsonld`, result);
     var hashlinkstr;
-    hashlinkstr = await hashlinkutil.getHashlink(`oca-artifacts/schema-base/${resourcename}.jsonld`);
-    console.log(hashlinkstr);
+    hashlinkstr = await hashlinkutil.getHashlink(`oca-artifacts/schema-base/${context}.jsonld`);
+    generateOCAEntryOverlay(patientpassport,context,hashlinkstr);
   
 }
 
