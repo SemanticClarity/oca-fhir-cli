@@ -18,6 +18,29 @@
   "@id": "dpv:MedicalHealth",
   "@type": "@id"
  }
+, 
+"attr_character_encoding": {
+  "resourceName": "Bundle",
+  "attr_character_encoding": {
+    "Bundle.implicitRules": "utf-8",
+    "Bundle._total": "utf-8",
+    "Bundle.id": "utf-8",
+    "Bundle.meta": "utf-8",
+    "Bundle.identifier": "utf-8",
+    "Bundle._implicitRules": "utf-8",
+    "Bundle._type": "utf-8",
+    "Bundle.timestamp": "utf-8",
+    "Bundle.resourceType": "utf-8",
+    "Bundle.entry": "utf-8",
+    "Bundle.signature": "utf-8",
+    "Bundle.language": "utf-8",
+    "Bundle.type": "utf-8",
+    "Bundle._timestamp": "utf-8",
+    "Bundle.total": "utf-8",
+    "Bundle._language": "utf-8",
+    "Bundle.link": "utf-8"
+  }
+}
 ,
 "attr_character_encoding_ref": 
     [
