@@ -59,4 +59,33 @@
       " unknown"
     ]
   }
-}]}
+}], 
+"attr_entries": {
+  "resourceName": "Bundle",
+  "attr_entries": {
+    "Bundle.entry.request.method": [
+      "GET ",
+      " HEAD ",
+      " POST ",
+      " PUT ",
+      " DELETE ",
+      " PATCH"
+    ],
+    "Bundle.type": [
+      "document ",
+      " message ",
+      " transaction ",
+      " transaction-response ",
+      " batch ",
+      " batch-response ",
+      " history ",
+      " searchset ",
+      " collection"
+    ],
+    "Bundle.entry.search.mode": [
+      "match ",
+      " include ",
+      " outcome - why this is in the result set"
+    ]
+  }
+}}
