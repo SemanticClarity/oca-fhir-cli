@@ -11,6 +11,10 @@
 "type": "spec/schema_base/1.0",
 "conformance-type": "CA-Core",
 "conformance-spec": ["http://hl7.org/fhir/ca/core/StructureDefinition/"],
+"attributes": {
+    "@id": "Bundle",
+    "@type": "@id"
+},
 "attribute_refs": 
     [
         "Immunization",
