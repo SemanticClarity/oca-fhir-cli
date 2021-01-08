@@ -1,0 +1,41 @@
+{
+"@context": {
+"@vocab" : "http://hl7.org/fhir/",
+"@version": 1.1,
+"domain": {"@type": "@vocab"}
+},
+"name": "ImmunizationRecommendation",
+"ocatype": "spec/overlay/character_encoding/1.0",
+"role": "",
+"conformance-type": "CA-Core",
+"conformance-spec": "http://hl7.org/fhir/ca/core/StructureDefinition/",
+"description": "FHIR ImmunizationRecommendation resource json object transformed to OCA Format Overlay",
+"classification": ["UMLS:C0008960", "GICS:351030"],
+"issued_by": "FHIR OCA WG",
+"schema_base": "hl:zQmYQtCDNFisEucH55E42MNLta6WSbJ4o4ntuG3pJMMAix9",
+"default_character_encoding": "",
+"purpose": {
+  "@id": "dpv:MedicalHealth",
+  "@type": "@id"
+ }
+, 
+"attr_entries": {
+  "ImmunizationRecommendation.patient": "utf-8",
+  "ImmunizationRecommendation.identifier": "utf-8",
+  "ImmunizationRecommendation.implicitRules": "utf-8",
+  "ImmunizationRecommendation.meta": "utf-8",
+  "ImmunizationRecommendation.date": "utf-8",
+  "ImmunizationRecommendation.id": "utf-8",
+  "ImmunizationRecommendation.extension": "utf-8",
+  "ImmunizationRecommendation.language": "utf-8",
+  "ImmunizationRecommendation._language": "utf-8",
+  "ImmunizationRecommendation._date": "utf-8",
+  "ImmunizationRecommendation.text": "utf-8",
+  "ImmunizationRecommendation._implicitRules": "utf-8",
+  "ImmunizationRecommendation.modifierExtension": "utf-8",
+  "ImmunizationRecommendation.recommendation": "utf-8",
+  "ImmunizationRecommendation.contained": "utf-8",
+  "ImmunizationRecommendation.resourceType": "utf-8",
+  "ImmunizationRecommendation.authority": "utf-8"
+}
+}

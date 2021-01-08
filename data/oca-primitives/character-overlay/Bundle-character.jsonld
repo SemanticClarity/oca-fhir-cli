@@ -1,0 +1,41 @@
+{
+"@context": {
+"@vocab" : "http://hl7.org/fhir/",
+"@version": 1.1,
+"domain": {"@type": "@vocab"}
+},
+"name": "Bundle",
+"ocatype": "spec/overlay/character_encoding/1.0",
+"role": "",
+"conformance-type": "CA-Core",
+"conformance-spec": "http://hl7.org/fhir/ca/core/StructureDefinition/",
+"description": "FHIR Bundle resource json object transformed to OCA Format Overlay",
+"classification": ["UMLS:C0008960", "GICS:351030"],
+"issued_by": "FHIR OCA WG",
+"schema_base": "hl:zQmNkzJuRdavCvPX8Uag93EyqYQMXR8zaVzQt8HVxbdHTm6",
+"default_character_encoding": "",
+"purpose": {
+  "@id": "dpv:MedicalHealth",
+  "@type": "@id"
+ }
+, 
+"attr_entries": {
+  "Bundle.implicitRules": "utf-8",
+  "Bundle._total": "utf-8",
+  "Bundle.id": "utf-8",
+  "Bundle.meta": "utf-8",
+  "Bundle.identifier": "utf-8",
+  "Bundle._implicitRules": "utf-8",
+  "Bundle._type": "utf-8",
+  "Bundle.timestamp": "utf-8",
+  "Bundle.resourceType": "utf-8",
+  "Bundle.entry": "utf-8",
+  "Bundle.signature": "utf-8",
+  "Bundle.language": "utf-8",
+  "Bundle.type": "utf-8",
+  "Bundle._timestamp": "utf-8",
+  "Bundle.total": "utf-8",
+  "Bundle._language": "utf-8",
+  "Bundle.link": "utf-8"
+}
+}
