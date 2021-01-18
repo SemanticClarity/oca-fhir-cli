@@ -1,12 +1,13 @@
 {
-  "name": "open-fhirpak",
+  "name": "oca-fhir-cli",
   "version": "0.1.0",
   "description": "OCA CVC Immunization bundle CLI for FHIR r4",
   "main": "index.js",
-  "repository": "https://github.com/SemanticClarity/open-fhirpak",
+  "repository": "https://github.com/SemanticClarity/oca-fhir-cli",
   "author": "Mukundan Parthasarathy",
   "license": "Apache 2.0",
   "dependencies": {
+    "configstore": "^5.0.1",
     "fhir": "^4.7.11",
     "fhirpath": "^2.7.1",
     "fhirpath.js": "^0.0.6",
@@ -14,6 +15,7 @@
     "handlebars-helpers-fhir": "^0.0.8",
     "hashlink": "^0.12.1",
     "node-cache": "^5.1.2",
-    "recursive-readdir": "^2.2.2"
+    "recursive-readdir": "^2.2.2",
+    "yargs": "^16.2.0"
   }
 }

@@ -7,25 +7,20 @@
 "dpv-gdpr": "http://www.w3.org/ns/dpv-gdpr#",
 "dpv-nace": "http://www.w3.org/ns/dpv-nace#"
 },
-"name": "{{@root.resourceType}}",
-"type": "spec/schema_base/1.0",
+"name": "{{@name}}",
+"type": "{{@oca-base-schema-type}}",
 "conformance-type": "{{@fhir-profile-ref}}",
 "conformance-spec": ["{{@fhir-profile-uri}}"],
-"attributes": {
-    "@id": "{{@root.resourceType}}",
-    "@type": "@id"
-},
-"attribute_refs": 
-    [
+"attributes": 
+   {
     {{#each entry}} 
         {{#if @last}} 
-        "{{resourceType}}"
+        "{{resourceType}}" : "{{{getHashlinkForPrimitive resourceType}}}"
         {{else}}
-        "{{resourceType}}",
+        "{{resourceType}}" : "{{{getHashlinkForPrimitive resourceType}}}",
         {{/if}}
     {{/each}}
-    ]
-,
+   },
 "description": "FHIR {{type}} resource json object transformed to jsonld {{@oca-artifact-type}} for OCA",
 "classification": ["{{@umls-cui}}", "GICS:351030"],
 "issued_by": "{{@author}}",

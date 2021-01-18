@@ -1,28 +1,42 @@
 {
-"@context": {
-"@vocab" : "http://hl7.org/fhir/",
-"@version": 1.1,
-"domain": {"@type": "@vocab"},
-"dpv": "http://www.w3.org/ns/dpv#",
-"dpv-gdpr": "http://www.w3.org/ns/dpv-gdpr#",
-"dpv-nace": "http://www.w3.org/ns/dpv-nace#"
-},
-"name": "Practitioner",
-"type": "spec/schema_base/1.0",
-"conformance-type": "CA-Core",
-"conformance-spec": "http://hl7.org/fhir/ca/core/StructureDefinition/",
-"description": "FHIR Practitioner resource json object transformed to jsonld Schema Base for OCA",
-"classification": ["UMLS:C0008960", "GICS:351030"],
-"issued_by": "FHIR OCA WG",
-"purpose": {
-  "@id": "dpv:MedicalHealth",
-  "@type": "@id"
-},
-"attributes": {
+  "@context": {
+    "@vocab": "http://hl7.org/fhir/",
+    "@version": 1.1,
+    "domain": {
+      "@type": "@vocab"
+    },
+    "dpv": "http://www.w3.org/ns/dpv#",
+    "dpv-gdpr": "http://www.w3.org/ns/dpv-gdpr#",
+    "dpv-nace": "http://www.w3.org/ns/dpv-nace#"
+  },
+  "name": "Practitioner",
+  "type": "spec/schema_base/1.0",
+  "conformance-type": "CA-Core",
+  "conformance-spec": "http://hl7.org/fhir/ca/core/StructureDefinition/",
+  "description": "FHIR Practitioner resource json object transformed to jsonld Schema Base for OCA",
+  "classification": [
+    "UMLS:C0008960",
+    "GICS:351030"
+  ],
+  "issued_by": "FHIR OCA WG",
+  "purpose": {
+    "@id": "dpv:MedicalHealth",
+    "@type": "@id"
+  },
+  "attributes": {
     "@id": "Practitioner",
     "@type": "@id"
+  },
+  "pii_attributes": [
+    "Practitioner.gender",
+    "Practitioner.active",
+    "Practitioner.photo",
+    "Practitioner.name",
+    "Practitioner.birthDate",
+    "Practitioner.communication",
+    "Practitioner.address",
+    "Practitioner.identifier",
+    "Practitioner.qualification",
+    "Practitioner.telecom"
+  ]
 }
-, 
-"pii_attributes": ["Practitioner.gender","Practitioner.active","Practitioner.photo","Practitioner.name","Practitioner.birthDate","Practitioner.communication","Practitioner.address","Practitioner.identifier","Practitioner.qualification","Practitioner.telecom"]
-}
-

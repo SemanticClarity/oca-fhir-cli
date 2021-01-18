@@ -12,7 +12,7 @@
 "description": "FHIR collection resource json object transformed to OCA Format Overlay",
 "classification": ["UMLS:C0008960", "GICS:351030"],
 "issued_by": "FHIR OCA WG",
-"schema_base": "hl:zQmbtf6tbQH8ptS69WPbKiVYAPh3XSaw3ZC2XH12D6yu3Wv",
+"schema_base": "hl:zQmQFxpq1fJ4xDBgtGfXW23VCX7LjgHwVPKAkf8eme62b6H",
 "default_character_encoding": "",
 "purpose": {
   "@id": "dpv:MedicalHealth",
