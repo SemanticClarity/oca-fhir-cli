@@ -13,6 +13,7 @@
 "conformance-spec": ["http://hl7.org/fhir/ca/baseline/StructureDefinition/profile-immunization"],
 "attributes": 
    {
+        "Bundle" : "hl:zQmNkzJuRdavCvPX8Uag93EyqYQMXR8zaVzQt8HVxbdHTm6",
         "Immunization" : "hl:zQmXnNzNSzfNFycXFFrFszhLkQ3xkHbziQYzrYxuJRpbnsH",
         "Patient" : "hl:zQmTQtUcMv8sgqk4SpQoo2TJQxKVW13EJnph6A76Sbj8yAM",
         "Practitioner" : "hl:zQmasfzMVY6sUsA1UMX86eLX86ddREZmspreBZ9397bswoW",
