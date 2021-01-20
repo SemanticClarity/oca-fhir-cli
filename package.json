@@ -2,7 +2,7 @@
   "name": "oca-fhir-cli",
   "version": "0.1.0",
   "description": "OCA CVC Immunization bundle CLI for FHIR r4",
-  "main": "index.js",
+  "main": "oca-fhir-cli.js",
   "repository": "https://github.com/SemanticClarity/oca-fhir-cli",
   "author": "Mukundan Parthasarathy",
   "license": "Apache 2.0",

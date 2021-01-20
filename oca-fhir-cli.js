@@ -9,7 +9,7 @@ const hashlinkutil = require('./lib/hashlink-utils');
 const ConfigStore = require('configstore');
 const pkg = require('./package.json');
 const { exit } = require('process');
-const cvcFhirOcaConverter = require('./lib/cvc-immunization-passport');
+//const {cvcFhirOcaConverter} = require('./lib/cvc-immunization-passport');
 
 var required_profiles = {};
 
@@ -85,11 +85,13 @@ const main = async() => {
     console.log("Exiting: Please provide fhir bundle input file using --input option");
     exit(3);
   }
+  var converter = loadProfile(profile_name);
 
-  if (loadProfile(profile_name) != null) {
+  if (converter != null) {
     console.log(`Profile ${profile_name} loaded!`)
-    cvcFhirOcaConverter.verifyCVCBundle();
-    cvcFhirOcaConverter.generateOCAArtifacts(config, fhirbundle, profile_name);
+
+    converter.verifyCVCBundle();
+    converter.generateOCAArtifacts(config, fhirbundle, profile_name);
   }
 }
 
