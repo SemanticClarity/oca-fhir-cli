@@ -9,16 +9,9 @@ const hashlinkutil = require('./lib/hashlink-utils');
 const ConfigStore = require('configstore');
 const pkg = require('./package.json');
 const { exit } = require('process');
-//const {cvcFhirOcaConverter} = require('./lib/cvc-immunization-passport');
 
 var required_profiles = {};
 
-/*
-
-var Fhir = require('fhir').Fhir;
-var ParseConformance = require('fhir').ParseConformance;
-var FhirVersions = require('fhir').Versions;
-*/
 
 
 function loadProfile(key) {
@@ -46,15 +39,6 @@ const main = async() => {
       console.log("retval["+loop+"]: "+ retval[loop]);
     }
   }
-  
-
-  var jsonobject = fs.readFileSync('examples/cvc-immunizationpassport/cvc-valuesets-fhir.json');
-  var cvcValueSets = await JSON.parse(jsonobject.toString());
-  var parser = new ParseConformance(false, FhirVersions.R4);
-  parser.parseBundle(cvcValueSets);
-  var fhir = new Fhir(parser);
-  var results = fhir.validate(patientpassport, {errorOnUnexpected: false}); 
-  console.log(results);
   */
   var argv = require('yargs/yargs')(process.argv.slice(2)).argv;
   let configFilePath = './config/oca-fhir-cli.json';
