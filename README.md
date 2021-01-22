@@ -33,3 +33,6 @@ Nodejs v14.15.3 or later (very likely that this project will rely on nodejs v14 
 - Group
 - Organization
 - Location
+
+2. Is this cli tool extensible?
+ Yes, the driver script (*oca-fhir-cli.js*) provides a mechanism to load js modules that implement extension functionality for specific applications such as Immunization Passport etc. Such extensions can be made available in the *lib* directory. The extension module should implement *verifyBundle* and *generateOCAArtifacts* functions to suit application needs.
