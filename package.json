@@ -1,11 +1,41 @@
 {
-  "name": "oca-fhir-cli",
-  "version": "0.1.0",
-  "description": "OCA CVC Immunization bundle CLI for FHIR r4",
-  "main": "oca-fhir-cli.js",
+  "name": "oca-fhir",
+  "version": "0.1.1",
+  "description": "OCA CVC Immunization bundle module for FHIR r4",
+  "main": "dist/oca-fhir.js",
+  "scripts": {
+    "start": "NODE_ENV=production node ./dist/index.js",
+    "local": "NODE_ENV=development nodemon --exec babel-node ./src/index.js",
+    "dev": "NODE_ENV=development webpack --mode development",
+    "build": "NODE_ENV=production webpack --mode production",
+    "test": "NODE_ENV=test webpack --mode development --progress && NODE_ENV=test mocha --require @babel/register --require test/helper.js -c test/*Spec.js*",
+    "clean": "rm -rf node_modules",
+    "reinstall": "npm run clean && npm install",
+    "rebuild": "npm run clean && npm install && npm run build"
+  },
   "repository": "https://github.com/SemanticClarity/oca-fhir-cli",
   "author": "Mukundan Parthasarathy",
   "license": "Apache 2.0",
+  "engines": {
+    "node": "14.x.x"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "chai": "^4.2.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "json-loader": "^0.5.7",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.7",
+    "webpack": "^5.18.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-node-externals": "^2.5.2"
+  },
   "dependencies": {
     "configstore": "^5.0.1",
     "fhir": "^4.7.11",
