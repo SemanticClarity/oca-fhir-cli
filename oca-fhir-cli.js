@@ -74,7 +74,7 @@ const main = async() => {
   if (converter != null) {
     console.log(`Profile ${profile_name} loaded!`)
 
-    converter.verifyCVCBundle();
+    converter.verifyFHIRBundle();
     converter.generateOCAArtifacts(config, fhirbundle, profile_name);
   }
 }
