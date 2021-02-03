@@ -25,12 +25,6 @@ Nodejs v14.15.3 or later (very likely that this project will rely on nodejs v14 
 2. Blinding Identity attributes identified in schema base is not intended to be prescriptive. FHIR resource properties that map to Who, What, When, Where, Why are currently flagged.
 2. Full validation of FHIR Profiles, Extensions and use of appropriate ValueSets prior to use of this cli tool is assumed. We recommend using FHIR Validator tool against the input FHIR R4 bundle, prior to processing using this cli tool to create corresponding OCA artifacts.
 
-### To Do
-- [ ] Add more example bundles for specific jurisdictional profiles (e.g. us-core-immunization)
-- [ ] OCA FHIR Implementation Guide
-- [ ] cli option to create (templates) for new profiles e.g. WHO Immunization profile etc.
-- [ ] cli option to create VC (verifiable credentials) using OCA schema base or appropriate overlay (e.g. Subset)
-- [ ] cli option to 'filter' input FHIR R4 Bundle entries prior to OCA artifact generation (customize *conformance-payload*) prior to OCA artifact generation
 
 ### FAQ
 1. Is there a list of FHIR R4 resources that are supported within input Bundles?
