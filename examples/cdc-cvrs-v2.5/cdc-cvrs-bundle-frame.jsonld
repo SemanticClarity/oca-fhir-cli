@@ -1,0 +1,26 @@
+{
+    "@context": [
+      "https://fhircat.org/fhir-r4/original/contexts/bundle.context.jsonld",
+      "https://fhircat.org/fhir-r4/original/contexts/immunization.context.jsonld",
+      "https://fhircat.org/fhir-r4/original/contexts/patient.context.jsonld",
+      "https://fhircat.org/fhir-r4/original/contexts/root.context.jsonld"
+      ],
+    "@explicit": true,
+    "@embed": "@once",
+    "vaccineCode" : { "@omitDefault": true },
+    "status": { "@omitDefault": true},
+    "occurrenceDateTime": {"@omitDefault": true},
+    "name": {
+      "@omitDefault": true
+    },
+    "birthDate": {
+      "@omitDefault": true
+    },
+    "gender": {
+      
+      "@omitDefault": true
+    },
+    "extension" : {
+      "@omitDefault": true
+    }
+  }

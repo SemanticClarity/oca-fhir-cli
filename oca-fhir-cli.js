@@ -41,7 +41,20 @@ const main = async() => {
   }
   */
   var argv = require('yargs/yargs')(process.argv.slice(2)).argv;
-  let configFilePath = './config/oca-fhir-cli.json';
+
+  var configFilePath;
+  if (argv.config) {
+    configFilePath = argv.config;
+    if (!fs.existsSync(configFilePath)) {
+      console.log("Exiting: Config file not accessible: "+ configFilePath);
+      exit(4);
+    }
+    
+  } else {
+    console.log('Loading default config file');
+    configFilePath = './config/oca-fhir-cli.json';
+  }
+
   let configStr = fs.readFileSync(configFilePath);
   var config =  await JSON.parse(configStr);
   
@@ -57,25 +70,28 @@ const main = async() => {
     console.log("Exiting: Please provide profile name using --profile option");
     exit(1);
   }
+  var converter = loadProfile(profile_name);
 
-  var fhirbundle;
-  if (argv.input) {
-    fhirbundle = argv.input;
+  var fhirbundle, csvfile;
+  if (argv.r4bundle) {
+    fhirbundle = argv.r4bundle;
     if (!fs.existsSync(fhirbundle)) {
       console.log("Exiting: Input FHIR Bundle does not exist["+fhirbundle+"]");
       exit(2);
     }
-  } else {
-    console.log("Exiting: Please provide fhir bundle input file using --input option");
-    exit(3);
-  }
-  var converter = loadProfile(profile_name);
-
-  if (converter != null) {
-    console.log(`Profile ${profile_name} loaded!`)
-
-    converter.verifyFHIRBundle();
-    converter.generateOCAArtifacts(config, fhirbundle, profile_name);
+    if (converter != null) {
+      console.log(`Profile ${profile_name} loaded`)
+      converter.verifyFHIRBundle(fhirbundle);
+      converter.generateOCAArtifactsFromR4Bundle(config, fhirbundle, profile_name);
+    }
+  } else if (argv.csv) {
+    csvfile = argv.csv;
+    if (!fs.existsSync(csvfile)) {
+      console.log("Exiting: Input CSV file does not exist["+csvfile+"]");
+      exit(2);
+    }
+    let fhirbundle = await converter.generateFHIRBundle(config,profile_name,csvfile);
+    //.then(converter.generateOCAArtifactsFromR4Bundle(config, fhirbundle, profile_name));
   }
 }
 
