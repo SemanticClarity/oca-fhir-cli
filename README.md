@@ -16,12 +16,13 @@ This release contains the following example modules:
 Nodejs v14.15.3 or later (very likely that this project will rely on nodejs v14 or later due to dependencies)
 
 
-`$node fhir-oca-cli.js --profile cvc-immunization-bundle --input examples/patient-bundle-instance-example.json`
+`$node oca-fhir-cli.js --profile cvc-immunization-bundle --input examples/patient-bundle-instance-example.json`
+`$node oca-fhir-cli.js --profile cdc-cvrs-v2.5 --csv .\examples\cdc-cvrs-v2.5\sample-data.csv`
 
 
 
 ### Release notes
-1. CDC CVRS profile option is not supported yet (WIP). But you can browse the *examples/cdc-cvrs-2.5* directory to review input csv, FHIR R4 json bundle, ConceptMap and other conformance artifacts.
+1. CDC CVRS profile option is WIP. But you can browse the *examples/cdc-cvrs-2.5* directory to review input csv, FHIR R4 json bundle, ConceptMap and other conformance artifacts.
 2. Generated label overlay jsonld should be treated as a representative instance document only: we expect this to be edited for appropriate use in web forms based on jurisdiction (e.g. language, FHIR profiles in use).
 3. Blinding Identity Taxonomy attributes identified in schema base is not intended to be prescriptive. FHIR resource properties that map to Who, What, When, Where, Why are currently flagged.
 4. Full validation of FHIR Profiles, Extensions and use of appropriate ValueSets prior to use of this cli tool is assumed. We recommend using FHIR Validator tool against the input FHIR R4 bundle, prior to processing using this cli tool to create corresponding OCA artifacts.
