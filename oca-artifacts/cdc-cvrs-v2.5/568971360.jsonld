@@ -3,6 +3,7 @@
       "https://fhircat.org/fhir-r4/original/contexts/bundle.context.jsonld",
       "https://fhircat.org/fhir-r4/original/contexts/immunization.context.jsonld",
       "https://fhircat.org/fhir-r4/original/contexts/patient.context.jsonld",
+      "https://fhircat.org/fhir-r4/original/contexts/extension.context.jsonld",
       "https://fhircat.org/fhir-r4/original/contexts/root.context.jsonld",
       {
         "@base": "http://hl7.org/fhir/",

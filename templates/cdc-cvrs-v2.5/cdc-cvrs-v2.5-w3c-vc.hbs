@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://w3id.org/vaccination/v1",
+    "https://w3id.org/security/bbs/v1"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "VaccinationCertificate"
+  ],
+  "id": "urn:uvci:af5vshde843jf831j128fj",
+  "name": "COVID-19 Vaccination Certificate",
+  "description": "COVID-19 Vaccination Certificate",
+  "credentialSubject": {
+    "type": "VaccinationEvent",
+    "batchNumber": "{{lot_number}}",
+    "administeringCentre": "{{admin_type}}",
+    "recipient": {
+      "type": "VaccineRecipient",
+      "givenName": "{{recip_first_name}}",
+      "familyName": "{{recip_last_name}}",
+      "gender": "{{recip_sex}}",
+      "birthDate": "{{recip_dob}}"
+    },
+    "vaccine": {
+      "type": "Vaccine",
+      "disease": "COVID-19",
+      "atcCode": "{{cvx}}"
+    }
+  }
+ 
+}

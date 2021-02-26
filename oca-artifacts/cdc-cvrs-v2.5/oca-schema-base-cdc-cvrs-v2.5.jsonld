@@ -1,0 +1,343 @@
+{
+    "@context": [
+        {
+        "@vocab": "http://hl7.org/fhir/",
+        "@version": 1.1,
+        "domain": {
+            "@type": "@vocab"
+          }
+        }
+    ],
+    "name": "cdc-patientbundle-example",
+    "type": "spec/schema_base/1.0",
+    "conformance-type": "CdcCvrsEua",
+    "conformance-spec": "http://example.org/StructureDefinition/CdcCvrsEuaBundle",
+    "attributes": {
+        "Bundle": "hl:zQmNkzJuRdavCvPX8Uag93EyqYQMXR8zaVzQt8HVxbdHTm6",
+        "Immunization": "hl:zQmXnNzNSzfNFycXFFrFszhLkQ3xkHbziQYzrYxuJRpbnsH",
+        "Patient": "hl:zQmTQtUcMv8sgqk4SpQoo2TJQxKVW13EJnph6A76Sbj8yAM"
+    },
+    "description": "FHIR collection resource json object transformed to jsonld  for OCA",
+    "classification": [
+        "UMLS:C0008960",
+        "GICS:351030"
+    ],
+    "issued_by": "fhir-oca-cli",
+    "purpose": {
+        "@id": "dpv:MedicalHealth",
+        "@type": "@id"
+    },
+    "conformance-payload": {
+        "resourceType": "Bundle",
+        "id": "CdcCvrsEuaBundleExample1",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/CdcCvrsEuaBundle"
+          ],
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+            }
+          ]
+        },
+        "type": "collection",
+        "entry": [
+          {
+            "resource": {
+              "resourceType": "Patient",
+              "id": "CdcCvrsPatientExample1",
+              "meta": {
+                "profile": [
+                  "http://example.org/StructureDefinition/CdcCvrsPatient"
+                ]
+              },
+              "extension": [
+                {
+                  "url": "ext_type",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "DEIDENTIFIED",
+                        "system": "http://example.org/CodeSystem/cdccvrs-dataextractype-codesystem"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "recip_ethnicity",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "2135-2",
+                        "system": "https://hl7.org/fhir/us/core/CodeSystem-cdcrec.json"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "recip_race",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "1002-5"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "recip_race",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "2076-8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "recip_race",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "2106-3"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "recip_race",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "2131-1"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "recip_race",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "2054-5"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "recip_race",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "2028-9"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "identifier": [
+                {
+                  "value": "135498413",
+                  "type": {
+                    "coding": [
+                      {
+                        "code": "MR",
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                      }
+                    ]
+                  },
+                  "system": "http://www.acme.com/identifiers/patient"
+                }
+              ],
+              "name": [
+                {
+                  "family": "Smith",
+                  "given": [
+                    "Mary"
+                  ]
+                },
+                {
+                  "given": [
+                    "Jane"
+                  ]
+                }
+              ],
+              "gender": "female",
+              "birthDate": "2000-06-14",
+              "address": [
+                {
+                  "line": [
+                    "123 Main St",
+                    "Apt. 436"
+                  ],
+                  "city": "Springfield",
+                  "district": "13121",
+                  "state": "GA",
+                  "postalCode": "30301"
+                }
+              ]
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Immunization",
+              "id": "CdcCvrsImmunizationExample1",
+              "meta": {
+                "profile": [
+                  "http://example.org/StructureDefinition/CdcCvrsImmunization"
+                ]
+              },
+              "extension": [
+                {
+                  "url": "ext_type",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "DEIDENTIFIED",
+                        "system": "http://example.org/CodeSystem/cdccvrs-dataextractype-codesystem"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "vTrcksPIN",
+                  "valueString": "AAA111"
+                },
+                {
+                  "url": "admin_type",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "17",
+                        "system": "http://example.org/CodeSystem/cdc-admintype-codeset"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "cmorbid_status",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "N",
+                        "system": "http://terminology.hl7.org/ValueSet/v2-0136"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "vax_refusal",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "N",
+                        "system": "http://terminology.hl7.org/ValueSet/v2-0136"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "serology",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "UNK",
+                        "system": "http://terminology.hl7.org/ValueSet/v2-0136"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "identifier": [
+                {
+                  "value": "568971356",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203#MR"
+                }
+              ],
+              "status": "completed",
+              "vaccineCode": {
+                "coding": [
+                  {
+                    "code": "207",
+                    "system": "http://example.org/CodeSystem/cdc-vaccine-eua-codeset"
+                  }
+                ]
+              },
+              "patient": {
+                "reference": "Patient/CdcCvrsPatientExample1"
+              },
+              "occurrenceDateTime": "2021-01-01T01:01:01.111+06:00",
+              "protocolApplied": [
+                {
+                  "doseNumberPositiveInt": 1,
+                  "seriesDosesPositiveInt": 2
+                }
+              ],
+              "lotNumber": "B235D",
+              "expirationDate": "2024-03-03",
+              "site": {
+                "coding": [
+                  {
+                    "code": "LA",
+                    "system": "http://terminology.hl7.org/ValueSet/v2-0163"
+                  }
+                ]
+              },
+              "route": {
+                "coding": [
+                  {
+                    "code": "C38238",
+                    "system": "http://terminology.hl7.org/ValueSet/v2-0162"
+                  }
+                ]
+              },
+              "performer": [
+                {
+                  "actor": {
+                    "reference": "Organization/org-hopeclinic"
+                  }
+                }
+              ],
+              "statusReason": {
+                "coding": [
+                  {
+                    "code": "MEDPREC"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+    "attr_blinding": [
+        "Bundle.timestamp"
+    ],
+    "attr_blinding_refs": [
+        "Immunization.reportOrigin",
+        "Immunization.vaccineCode",
+        "Immunization.location",
+        "Immunization.performer.actor",
+        "Immunization.primarySource",
+        "Immunization.encounter",
+        "Immunization.recorded",
+        "Patient.photo",
+        "Patient.deceasedDateTime",
+        "Patient.generalPractitioner",
+        "Patient.link",
+        "Patient.telecom",
+        "Patient.birthDate",
+        "Patient.maritalStatus",
+        "Patient.contact",
+        "Patient.multipleBirthInteger",
+        "Patient.communication",
+        "Patient.multipleBirthBoolean",
+        "Patient.gender",
+        "Patient.managingOrganization",
+        "Patient.identifier",
+        "Patient.name",
+        "Patient.deceasedBoolean",
+        "Patient.address",
+        "Patient.active"
+    ]
+}
