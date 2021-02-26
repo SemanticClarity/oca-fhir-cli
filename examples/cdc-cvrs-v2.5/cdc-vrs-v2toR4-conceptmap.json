@@ -314,7 +314,7 @@
                     "code": "vrtcks_prov_pin",
                     "target": [
                         {
-                            "code": "Immunization.performer.id",
+                            "code": "Immunization.extension:vTrcksProvPin",
                             "equivalence": "specializes"
                         }
                     ]
