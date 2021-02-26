@@ -54,7 +54,7 @@
                     "@type": "@id"
                 },
                 "dateOfVaccination": {
-                    "@context": "https://fhircat.org/fhir-r4/original/contexts/date.context.jsonld",
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/datetime.context.jsonld",
                     "@id":"fhir:Immunization.occurenceDateTime", 
                     "@type": "@id"
                 },
