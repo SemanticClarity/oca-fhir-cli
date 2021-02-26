@@ -16,15 +16,21 @@ This release contains the following example modules:
 Nodejs v14.15.3 or later (very likely that this project will rely on nodejs v14 or later due to dependencies)
 
 
-`$node fhir-oca-cli.js --profile cvc-immunization-bundle --input examples/patient-bundle-instance-example.json`
+`$node oca-fhir-cli.js --profile cvc-immunization-bundle --input examples/patient-bundle-instance-example.json`
+
+`$node oca-fhir-cli.js --profile cdc-cvrs-v2.5 --csv .\examples\cdc-cvrs-v2.5\sample-data.csv`
 
 
 
 ### Release notes
-1. CDC CVRS profile option is not supported yet (WIP). But you can browse the *examples/cdc-cvrs-2.5* directory to review input csv, FHIR R4 json bundle, ConceptMap and other conformance artifacts.
-2. Generated label overlay jsonld should be treated as a representative instance document only: we expect this to be edited for appropriate use in web forms based on jurisdiction (e.g. language, FHIR profiles in use).
-3. Blinding Identity Taxonomy attributes identified in schema base is not intended to be prescriptive. FHIR resource properties that map to Who, What, When, Where, Why are currently flagged.
-4. Full validation of FHIR Profiles, Extensions and use of appropriate ValueSets prior to use of this cli tool is assumed. We recommend using FHIR Validator tool against the input FHIR R4 bundle, prior to processing using this cli tool to create corresponding OCA artifacts.
+1. CDC CVRS profile option is WIP. But you can browse the *examples/cdc-cvrs-2.5* directory to review input csv, FHIR R4 json bundle, ConceptMap and other conformance artifacts. Generated output files can be found under *oca-artifacts/cdc-cvrs-v2.5* directory. Basename of generated files are based on vax_event_id in input csv data. Files named *vc-.jsonld* are example vaccination certificate files based on W3C CCG candidate work item [vaccination vocabulary](https://w3c-ccg.github.io/vaccination-vocab/).
+2. EU EHealth profile is not supported by this CLI at this time. Only the w3c ccg to FHIR R4 vocabulary mapping is supported via the JSONLD Context files (see item #3 below).
+3. *[JSONLD FHIR Context files for Vaccination Certificates by Jurisdiction](data/r4/jsonld-context-files)* directory contains 2 context files that can be used to map the w3c ccg vaccination vocabulary to different jurisdictional requirements using HL7 FHIR R4 resource model. JSONLD Context file names are named after the same profiles used in this module (e.g. cdc-cvrs-v2.5, and eu-ehealth).
+4. *[JSONLD Framing definition (CDC CVRS)example for R4 immunization bundles](data/jsonld-frames)* directory contains an example jsonld framing definition that can be used against the R4 JSONLD Bundle for *cdc-cvrs-v2.5* profile.
+5. *[Generated output files for CDC CVRS profile](oca-artifacts/cdc-cvrs-v2.5)* directory contains vaccintation certificate jsonld files per w3c ccg vocabulary, OCA base schema and JSONLD R4 FHIR Bundles for each record in the input csv file.
+6. Generated OCA label overlay jsonld should be treated as a representative instance document only: we expect this to be edited for appropriate use in web forms based on jurisdiction (e.g. language, FHIR profiles in use).
+7. OCA Blinding Identity Taxonomy attributes identified in schema base is not intended to be prescriptive. FHIR resource properties that map to Who, What, When, Where, Why are currently flagged.
+8. Full validation of FHIR Profiles, Extensions and use of appropriate ValueSets prior to use of this cli tool is assumed. We recommend using FHIR Validator tool against the input FHIR R4 bundle, prior to processing using this cli tool to create corresponding OCA artifacts.
 
 
 ### FAQ
