@@ -17,6 +17,7 @@ Nodejs v14.15.3 or later (very likely that this project will rely on nodejs v14 
 
 
 `$node oca-fhir-cli.js --profile cvc-immunization-bundle --input examples/patient-bundle-instance-example.json`
+
 `$node oca-fhir-cli.js --profile cdc-cvrs-v2.5 --csv .\examples\cdc-cvrs-v2.5\sample-data.csv`
 
 
