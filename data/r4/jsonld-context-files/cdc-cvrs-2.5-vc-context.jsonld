@@ -34,25 +34,37 @@
                 "id": "@id",
                 "type": "@type",
 
-                "administeringCentre": {"@type": "fhir:Immunization.location"},
-                "batchNumber": {"@type":"fhir:Immunization.lotNumber"},
+                "administeringCentre": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/location.context.jsonld",
+                    "@id": "fhir:Immunization.location",
+                    "@type": "@id"
+                },
+                "batchNumber": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/string.context.jsonld",
+                    "@id":"fhir:Immunization.lotNumber",
+                    "@type": "@id"
+                },
                 "dateOfVaccination": {
-                    "@id": "https://w3id.org/vaccination#dateOfVaccination", 
-                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/date.context.jsonld",
+                    "@id":"fhir:Immunization.occurenceDateTime", 
+                    "@type": "@id"
                 },
                 "recipient": {
-                    "@id": "fhir:Patient.identifier",
-                    "@type": "fhir:Patient"
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/patient.context.jsonld",
+                    "@id": "fhir:Patient",
+                    "@type": "@id"
                 },
                 "vaccine": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/valueset.context.jsonld",
                     "@id": "http://hl7.org/fhir/ValueSet/vaccine-code",
-                    "@type": "fhir:Immunization.vaccineCode"
+                    "@type": "@id"
                 }
             }
         },
 
         "VaccineRecipient": {
             "@id": "https://w3id.org/vaccination#VaccineRecipient",
+            "@type": "fhir:Patient",
 
             "@context": {
                 "@version": 1.1,
@@ -62,14 +74,28 @@
                 "type": "@type",
 
                 "birthDate": {
-                    "@id": "", 
-                    "@type": "fhir:Patient.birthDate"
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/patient-birthtime.context.jsonld",
+                    "@id": "fhir:Patient.birthDate", 
+                    "@type": "@id"
                 },
-                "familyName": { "@type": "fhir:Patient.name.familyName"},
-                "gender": { "@type": "fhir:Patient.name.gender"},
-                "givenName": { "@type": "fhir:Patient.name.givenName"}
+                "familyName": { 
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/humanname.context.jsonld",
+                    "@id": "fhir:Patient.name.familyName",
+                    "@type": "@id"
+                },
+                "gender": { 
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/patient-genderidentity.context.jsonld",
+                    "@id": "fhir:Patient.name.gender",
+                    "@type": "@id"
+                },
+                "givenName": { 
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/humanname.context.jsonld",
+                    "@id": "fhir:Patient.name.givenName",
+                    "@type": "@id"
+                }
             }
         },
+
 
         "Vaccine": {
             "@id": "https://w3id.org/vaccination#Vaccine",
@@ -82,10 +108,14 @@
                 "id": "@id",
                 "type": "@type",
 
-                "atcCode": "http://hl7.org/fhir/ValueSet/vaccine-code",
+                "atcCode": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/valueset.context.jsonld",
+                    "@id": "http://hl7.org/fhir/ValueSet/vaccine-code",
+                    "@type": "@id"
+                },
                 "event": {
                     "@id": "https://w3id.org/vaccination#VaccineRecipientVaccineEvent",
-                    "@type": "fhir:Immunization.identifier"
+                    "@type": "https://w3id.org/vaccination#VaccineEvent"
                 }
             }
         }

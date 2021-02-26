@@ -29,6 +29,7 @@
 
         "VaccinationEvent": {
             "@id": "https://w3id.org/vaccination#VaccinationEvent",
+            "@type": "fhir:Immunization",
 
             "@context": {
                 "@version": 1.1,
