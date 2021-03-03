@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "fhir": "http://build.fhir.org/",
+        "name": {
+            "@id": "fhir:location#name",
+            "@type": "xsd:string"
+          }
+    }
+}
