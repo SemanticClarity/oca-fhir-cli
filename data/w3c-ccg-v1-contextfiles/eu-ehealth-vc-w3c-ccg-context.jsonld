@@ -45,6 +45,7 @@
                    
                 },
                 "batchNumber": {
+                    "@context": "fhir/immunization.lotnumber.context.jsonld",
                     "@id":"immunization.lotNumber"
                 },
                 "countryOfVaccination": {
