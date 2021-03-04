@@ -1,0 +1,15 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "fhir": "http://build.fhir.org/",
+        "dateOfVaccination" : {
+             "@id": "fhir:immunization#occurenceDateTime",
+             "@type": "xsd:dateTime"
+         },
+         "nextVaccinationDate" : {
+             "@id": "fhir:immunizationRecommendation#dateCriterion.value",
+             "@type": "xsd:dateTime"
+         }
+    }
+}

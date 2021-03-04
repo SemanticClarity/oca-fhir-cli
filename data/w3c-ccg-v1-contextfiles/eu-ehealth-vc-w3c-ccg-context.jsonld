@@ -39,47 +39,34 @@
                 "type": "@type",
 
                 "administeringCentre": {
-                    "@context": "fhir/location.context.jsonld",
-                    "@id": "Location.name",
-                    "@type": "Immunization.location.name"
-                   
+                    "@context": "fhir/location.context.jsonld"
                 },
                 "batchNumber": {
-                    "@context": "fhir/immunization.lotnumber.context.jsonld",
-                    "@id":"immunization.lotNumber"
+                    "@context": "fhir/immunization.lotnumber.context.jsonld"
                 },
                 "countryOfVaccination": {
+                    "@id": "Immunization.location.address.country",
                     "@type":"urn:iso:std:iso:3166"
                 },
                 "dateOfVaccination": {
-                    "@context": "fhir/datetime.context.jsonld",
-                    "@id":"Immunization.occurenceDateTime", 
-                    "@type": "@id"
+                    "@context": "fhir/datetime.context.jsonld"
                 },
                 "healthProfessional": {
                     "@context": "fhir/immunization.performer.context.jsonld",
-                    "@id": "Immunization.performer.actor",
+                    "@id": "Immunization.performer.function",
                     "@type": "@id"
                 },
                 "nextVaccinationDate": {
-                    "@context": "fhir/immunizationrecommendation.recommendation.datecriterion.context.jsonld", 
-                    "@id": "ImmunizationRecommendation.dateCriterion.value",
-                    "@type": "@id"
+                    "@context": "fhir/datetime.context.jsonld"
                 },
                 "order": {
-                    "@context": "fhir/immunization.protocolapplied.context.jsonld",
-                    "@id": "Immunization.protocolApplied.doseNumber",
-                    "@type": "@id"
+                    "@context": "fhir/immunization.protocolapplied.context.jsonld"
                 },
                 "recipient": {
-                    "@context": "fhir/patient.context.jsonld",
-                    "@id": "Patient",
-                    "@type": "@id"
+                    "@context": "fhir/patient.context.jsonld"
                 },
                 "vaccine": {
-                    "@context": "fhir/valueset.context.jsonld",
-                    "@id": "http://hl7.org/fhir/ValueSet/vaccine-code",
-                    "@type": "@id"
+                    "@context": "fhir/immunization.vaccine.context.jsonld"
                 }
             }
         },
