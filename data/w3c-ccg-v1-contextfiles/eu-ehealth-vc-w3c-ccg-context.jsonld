@@ -39,34 +39,49 @@
                 "type": "@type",
 
                 "administeringCentre": {
-                    "@context": "fhir/location.context.jsonld"
+                    "@context": "fhir/default.context.jsonld",
+                    "@id": "fhir:location#name",
+                    "@type": "xsd:string"
                 },
                 "batchNumber": {
-                    "@context": "fhir/immunization.lotnumber.context.jsonld"
+                    "@context": "fhir/default.context.jsonld",
+                    "@id": "fhir:immunization#lotNumber",
+                    "@type": "xsd:string"
                 },
                 "countryOfVaccination": {
-                    "@id": "Immunization.location.address.country",
-                    "@type":"urn:iso:std:iso:3166"
+                    "@context": "fhir/default.context.jsonld",
+                    "@id": "valueset-hl7-iso-countrycodes",
+                    "@type":"xsd:string"
                 },
                 "dateOfVaccination": {
-                    "@context": "fhir/datetime.context.jsonld"
+                    "@context": "fhir/default.context.jsonld",
+                    "@id": "fhir:immunization#occurenceDateTime",
+                    "@type": "xsd:dateTime"
                 },
                 "healthProfessional": {
                     "@context": "fhir/immunization.performer.context.jsonld",
-                    "@id": "Immunization.performer.function",
-                    "@type": "@id"
+                    "@id": "valueset-immunization-function",
+                    "@type": "xsd:string"
                 },
                 "nextVaccinationDate": {
-                    "@context": "fhir/datetime.context.jsonld"
+                    "@context": "fhir/default.context.jsonld",
+                    "@id": "fhir:immunizationRecommendation#dateCriterion.value",
+                    "@type": "xsd:dateTime"
                 },
                 "order": {
-                    "@context": "fhir/immunization.protocolapplied.context.jsonld"
+                    "@context": "fhir/default.context.jsonld",
+                    "@id": "fhir:immunization#protocolApplied.doseNumber",
+                    "@type": "xsd:string"
                 },
                 "recipient": {
-                    "@context": "fhir/patient.context.jsonld"
+                    "@context": "fhir/default.context.jsonld",
+                    "@id": "fhir:patient#identifier",
+                    "@type": "xsd:string"
                 },
                 "vaccine": {
-                    "@context": "fhir/immunization.vaccine.context.jsonld"
+                    "@context": "fhir/immunization.vaccine.context.jsonld",
+                    "@id": "valueset-vaccine-code",
+                    "@type": "xsd:integer"
                 }
             }
         },
@@ -83,28 +98,31 @@
                 "type": "@type",
 
                 "birthDate": {
-                    "@context": "fhir/patient-birthtime.context.jsonld",
-                    "@id": "Patient.birthDate"
+                    "@context": "fhir/default.context.jsonld",
+                    "@id": "fhir:patient#birthDate",
+                    "@type": "xsd:dateTime"
                 },
                 "familyName": { 
-                    "@context": "fhir/humanname.context.jsonld",
-                    "@id": "Patient.name.familyName"
+                    "@context": "fhir/default.context.jsonld",
+                    "@id": "fhir:patient#name.familyName",
+                    "@type": "xsd:string"
                 },
                 "gender": { 
-                    "@context": "fhir/patient-genderidentity.context.jsonld",
-                    "@id": "Patient.name.gender"
+                    "@context": "fhir/patient.context.jsonld",
+                    "@id": "patient-gender-code",
+                    "@type": "xsd:string"
                 },
                 "givenName": { 
-                    "@context": "fhir/humanname.context.jsonld",
-                    "@id": "Patient.name.givenName",
-                    "@type": "@id"
+                    "@context": "fhir/patient.context.jsonld",
+                    "@id": "fhir:patient#name.givenName",
+                    "@type": "xsd:string"
                 }
             }
         },
 
         "Vaccine": {
             "@id": "https://w3id.org/vaccination#Vaccine",
-            "@type": "Immunization",
+            
 
             "@context": {
                 "@version": 1.1,
@@ -114,14 +132,14 @@
                 "type": "@type",
 
                 "atcCode": {
-                    "@context": "fhir/valueset.context.jsonld",
-                    "@id": "http://hl7.org/fhir/ValueSet/vaccine-code",
-                    "@type": "@id"
+                    "@context": "fhir/immunization.vaccine.context.jsonld",
+                    "@id": "valueset-vaccine-code",
+                    "@type": "xsd:integer"
                 },
                 "disease": {
-                    "@context": "fhir/immunization.protocolapplied.context.jsonld",
-                    "@type": "@id",
-                    "@id": "Immunization.protocolApplied.targetedDisease"
+                    "@context": "fhir/default.context.jsonld",
+                    "@type": "xsd:string",
+                    "@id": "fhir:immunization#protocolApplied.targetedDisease"
                 },
                 "event": {
                     "@id": "https://w3id.org/vaccination#VaccineRecipientVaccineEvent",
@@ -134,8 +152,8 @@
                 },
                 "medicinalProductName": {
                     "@context": "fhir/valueset.context.jsonld",
-                    "@id": "fhir:",
-                    "@type": "@id"
+                    "@id": "https://w3id.org/vaccination#medicinalProductName",
+                    "@type": "xsd:string"
                 } 
             }
         }

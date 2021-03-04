@@ -1,11 +1,6 @@
 {
     "@context": {
         "@version": 1.1,
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "fhir": "http://build.fhir.org/",
-        "patient" : {
-             "@id": "fhir:patient#identifier",
-             "@type": "xsd:string"
-         }
+        "patient-gender-code": "http://hl7.org/fhir/administrative-gender"
     }
 }
