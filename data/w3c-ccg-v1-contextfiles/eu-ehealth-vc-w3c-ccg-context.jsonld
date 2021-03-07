@@ -13,7 +13,9 @@
 
         "VaccinationCertificate": {
             "@id": "https://w3id.org/vaccination#VaccinationCertificate",
-            "bundleDRI" : "hl:xxxxxxxxxxxxxxxxxxxxxx",
+            "bundleDRI" : {
+                "@id": ""
+            },
             "@context": {
                 "@version": 1.1,
                 "@protected": true,
@@ -39,49 +41,40 @@
                 "type": "@type",
 
                 "administeringCentre": {
-                    "@context": "fhir/default.context.jsonld",
-                    "@id": "fhir:location#name",
-                    "@type": "xsd:string"
+                    "@id": "http://hl7.org/fhir/Location.name",
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
                 },
                 "batchNumber": {
-                    "@context": "fhir/default.context.jsonld",
-                    "@id": "fhir:immunization#lotNumber",
-                    "@type": "xsd:string"
+                    "@id": "http://hl7.org/fhir/Immunization.lotNumber",
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
                 },
                 "countryOfVaccination": {
-                    "@context": "fhir/default.context.jsonld",
                     "@id": "valueset-hl7-iso-countrycodes",
-                    "@type":"xsd:string"
+                    "@type":"http://www.w3.org/2001/XMLSchema#string"
                 },
                 "dateOfVaccination": {
-                    "@context": "fhir/default.context.jsonld",
-                    "@id": "fhir:immunization#occurenceDateTime",
-                    "@type": "xsd:dateTime"
+                    "@id": "http://hl7.org/fhir/Immunization.occurenceDateTime",
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
                 },
                 "healthProfessional": {
-                    "@context": "fhir/immunization.performer.context.jsonld",
                     "@id": "valueset-immunization-function",
-                    "@type": "xsd:string"
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
                 },
                 "nextVaccinationDate": {
-                    "@context": "fhir/default.context.jsonld",
-                    "@id": "fhir:immunizationRecommendation#dateCriterion.value",
+                    "@id": "http://hl7.org/fhir/ImmunizationRecommendation.dateCriterion.value",
                     "@type": "xsd:dateTime"
                 },
                 "order": {
-                    "@context": "fhir/default.context.jsonld",
-                    "@id": "fhir:immunization#protocolApplied.doseNumber",
-                    "@type": "xsd:string"
+                    "@id": "http://hl7.org/fhir/Immunization.protocolApplied.doseNumber",
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
                 },
                 "recipient": {
-                    "@context": "fhir/default.context.jsonld",
-                    "@id": "fhir:patient#identifier",
-                    "@type": "xsd:string"
+                    "@id": "http://hl7.org/fhir/Patient.identifier",
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
                 },
                 "vaccine": {
-                    "@context": "fhir/immunization.vaccine.context.jsonld",
                     "@id": "valueset-vaccine-code",
-                    "@type": "xsd:integer"
+                    "@type": "http://www.w3.org/2001/XMLSchema#integer"
                 }
             }
         },
@@ -99,23 +92,23 @@
 
                 "birthDate": {
                     "@context": "fhir/default.context.jsonld",
-                    "@id": "fhir:patient#birthDate",
-                    "@type": "xsd:dateTime"
+                    "@id": "http://hl7.org/fhir/Patient#birthDate",
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
                 },
                 "familyName": { 
                     "@context": "fhir/default.context.jsonld",
-                    "@id": "fhir:patient#name.familyName",
-                    "@type": "xsd:string"
+                    "@id": "http://hl7.org/fhir/Iatient#name.familyName",
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
                 },
                 "gender": { 
                     "@context": "fhir/patient.context.jsonld",
                     "@id": "patient-gender-code",
-                    "@type": "xsd:string"
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
                 },
                 "givenName": { 
                     "@context": "fhir/patient.context.jsonld",
-                    "@id": "fhir:patient#name.givenName",
-                    "@type": "xsd:string"
+                    "@id": "http://hl7.org/fhir/Iatient#name.givenName",
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
                 }
             }
         },
@@ -134,12 +127,12 @@
                 "atcCode": {
                     "@context": "fhir/immunization.vaccine.context.jsonld",
                     "@id": "valueset-vaccine-code",
-                    "@type": "xsd:integer"
+                    "@type": "http://www.w3.org/2001/XMLSchema#integer"
                 },
                 "disease": {
                     "@context": "fhir/default.context.jsonld",
-                    "@type": "xsd:string",
-                    "@id": "fhir:immunization#protocolApplied.targetedDisease"
+                    "@type": "http://www.w3.org/2001/XMLSchema#string",
+                    "@id": "http://hl7.org/fhir/Immunization#protocolApplied.targetedDisease"
                 },
                 "event": {
                     "@id": "https://w3id.org/vaccination#VaccineRecipientVaccineEvent",
@@ -153,7 +146,7 @@
                 "medicinalProductName": {
                     "@context": "fhir/valueset.context.jsonld",
                     "@id": "https://w3id.org/vaccination#medicinalProductName",
-                    "@type": "xsd:string"
+                    "@type": "http://www.w3.org/2001/XMLSchema#string"
                 } 
             }
         }
