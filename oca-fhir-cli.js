@@ -81,8 +81,13 @@ const main = async() => {
       console.log("Exiting: Input CSV file does not exist["+csvfile+"]");
       exit(2);
     }
+<<<<<<< Updated upstream
     let fhirbundle =  converter.generateFHIRBundle(config,profile_name,csvfile);
     //.then(converter.generateOCAArtifactsFromR4Bundle(config, fhirbundle, profile_name));
+=======
+    let fhirbundle = await converter.generateFHIRBundle(config,profile_name,csvfile)
+     .then(converter.generateOCAArtifactsFromR4Bundle(config, fhirbundle, profile_name));
+>>>>>>> Stashed changes
   }
 }
 

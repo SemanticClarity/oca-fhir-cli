@@ -1,0 +1,373 @@
+{
+  "@context": [
+    "https://fhircat.org/fhir-r5/original/contexts/bundle.context.jsonld",
+    "https://fhircat.org/fhir-r5/original/contexts/immunization.context.jsonld",
+    "https://fhircat.org/fhir-r5/original/contexts/patient.context.jsonld",
+    "https://fhircat.org/fhir-r5/original/contexts/root.context.jsonld",
+    {
+      "@base": "http://hl7.org/fhir/",
+      "nodeRole": {
+        "@type": "@id",
+        "@id": "fhir:nodeRole"
+      },
+      "owl:imports": {
+        "@type": "@id"
+      },
+      "owl:versionIRI": {
+        "@type": "@id"
+      }
+    }
+  ],
+  "resourceType": "fhir:Bundle",
+  "id": "CdcCvrsEuaBundleExample1",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/CdcCvrsEuaBundle"
+    ],
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "index": 0
+      }
+    ]
+  },
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "fhir:Patient",
+        "id": "CdcCvrsPatientExample1",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/CdcCvrsPatient"
+          ]
+        },
+        "extension": [
+          {
+            "url": "ext_type",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "DEIDENTIFIED",
+                  "system": "http://example.org/CodeSystem/cdccvrs-dataextractype-codesystem",
+                  "index": 0,
+                  "@type": "http://example.org/CodeSystem/cdccvrs-dataextractype-codesystem/DEIDENTIFIED"
+                }
+              ]
+            },
+            "index": 0
+          },
+          {
+            "url": "recip_ethnicity",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "2135-2",
+                  "system": "https://hl7.org/fhir/us/core/CodeSystem-cdcrec.json",
+                  "index": 0,
+                  "@type": "https://hl7.org/fhir/us/core/CodeSystem-cdcrec.json/2135-2"
+                }
+              ]
+            },
+            "index": 1
+          },
+          {
+            "url": "recip_race",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "1002-5",
+                  "index": 0
+                }
+              ]
+            },
+            "index": 2
+          },
+          {
+            "url": "recip_race",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "2076-8",
+                  "index": 0
+                }
+              ]
+            },
+            "index": 3
+          },
+          {
+            "url": "recip_race",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "2106-3",
+                  "index": 0
+                }
+              ]
+            },
+            "index": 4
+          },
+          {
+            "url": "recip_race",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "2131-1",
+                  "index": 0
+                }
+              ]
+            },
+            "index": 5
+          },
+          {
+            "url": "recip_race",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "2054-5",
+                  "index": 0
+                }
+              ]
+            },
+            "index": 6
+          },
+          {
+            "url": "recip_race",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "2028-9",
+                  "index": 0
+                }
+              ]
+            },
+            "index": 7
+          }
+        ],
+        "identifier": [
+          {
+            "value": "135498413",
+            "type": {
+              "coding": [
+                {
+                  "code": "MR",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "index": 0,
+                  "@type": "http://terminology.hl7.org/CodeSystem/v2-0203/MR"
+                }
+              ]
+            },
+            "system": "http://www.acme.com/identifiers/patient",
+            "index": 0
+          }
+        ],
+        "name": [
+          {
+            "family": "Smith",
+            "given": [
+              "Mary"
+            ],
+            "index": 0
+          },
+          {
+            "given": [
+              "Jane"
+            ],
+            "index": 1
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2000-06-14",
+        "address": [
+          {
+            "line": [
+              "123 Main St",
+              "Apt. 436"
+            ],
+            "city": "Springfield",
+            "district": "13121",
+            "state": "GA",
+            "postalCode": "30301",
+            "index": 0
+          }
+        ],
+        "@id": "#CdcCvrsPatientExample1"
+      },
+      "index": 0
+    },
+    {
+      "resource": {
+        "resourceType": "fhir:Immunization",
+        "id": "CdcCvrsImmunizationExample1",
+        "meta": {
+          "profile": [
+            "http://example.org/StructureDefinition/CdcCvrsImmunization"
+          ]
+        },
+        "extension": [
+          {
+            "url": "ext_type",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "DEIDENTIFIED",
+                  "system": "http://example.org/CodeSystem/cdccvrs-dataextractype-codesystem",
+                  "index": 0,
+                  "@type": "http://example.org/CodeSystem/cdccvrs-dataextractype-codesystem/DEIDENTIFIED"
+                }
+              ]
+            },
+            "index": 0
+          },
+          {
+            "url": "vTrcksPIN",
+            "valueString": "AAA111",
+            "index": 1
+          },
+          {
+            "url": "admin_type",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "17",
+                  "system": "http://example.org/CodeSystem/cdc-admintype-codeset",
+                  "index": 0,
+                  "@type": "http://example.org/CodeSystem/cdc-admintype-codeset/17"
+                }
+              ]
+            },
+            "index": 2
+          },
+          {
+            "url": "cmorbid_status",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "N",
+                  "system": "http://terminology.hl7.org/ValueSet/v2-0136",
+                  "index": 0,
+                  "@type": "http://terminology.hl7.org/ValueSet/v2-0136/N"
+                }
+              ]
+            },
+            "index": 3
+          },
+          {
+            "url": "vax_refusal",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "N",
+                  "system": "http://terminology.hl7.org/ValueSet/v2-0136",
+                  "index": 0,
+                  "@type": "http://terminology.hl7.org/ValueSet/v2-0136/N"
+                }
+              ]
+            },
+            "index": 4
+          },
+          {
+            "url": "serology",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "UNK",
+                  "system": "http://terminology.hl7.org/ValueSet/v2-0136",
+                  "index": 0,
+                  "@type": "http://terminology.hl7.org/ValueSet/v2-0136/UNK"
+                }
+              ]
+            },
+            "index": 5
+          }
+        ],
+        "identifier": [
+          {
+            "value": "568971356",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203#MR",
+            "index": 0
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "code": "207",
+              "system": "http://example.org/CodeSystem/cdc-vaccine-eua-codeset",
+              "index": 0,
+              "@type": "http://example.org/CodeSystem/cdc-vaccine-eua-codeset/207"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/CdcCvrsPatientExample1",
+          "fhir:link": {
+            "@id": "../Patient/CdcCvrsPatientExample1",
+            "@type": "fhir:Patient"
+          }
+        },
+        "occurrenceDateTime": "2021-01-01T01:01:01.111+06:00",
+        "protocolApplied": [
+          {
+            "doseNumberPositiveInt": 1,
+            "seriesDosesPositiveInt": 2,
+            "index": 0
+          }
+        ],
+        "lotNumber": "B235D",
+        "expirationDate": "2024-03-03",
+        "site": {
+          "coding": [
+            {
+              "code": "LA",
+              "system": "http://terminology.hl7.org/ValueSet/v2-0163",
+              "index": 0,
+              "@type": "http://terminology.hl7.org/ValueSet/v2-0163/LA"
+            }
+          ]
+        },
+        "route": {
+          "coding": [
+            {
+              "code": "C38238",
+              "system": "http://terminology.hl7.org/ValueSet/v2-0162",
+              "index": 0,
+              "@type": "http://terminology.hl7.org/ValueSet/v2-0162/C38238"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "actor": {
+              "reference": "Organization/org-hopeclinic",
+              "fhir:link": {
+                "@id": "../Organization/org-hopeclinic",
+                "@type": "fhir:Organization"
+              }
+            },
+            "index": 0
+          }
+        ],
+        "statusReason": {
+          "coding": [
+            {
+              "code": "MEDPREC",
+              "index": 0
+            }
+          ]
+        },
+        "@id": "#CdcCvrsImmunizationExample1"
+      },
+      "index": 1
+    }
+  ],
+  "nodeRole": "fhir:treeRoot",
+  "@id": "Bundle/CdcCvrsEuaBundleExample1",
+  "@included": {
+    "@id": "Bundle/CdcCvrsEuaBundleExample1.ttl",
+    "owl:versionIRI": "Bundle/CdcCvrsEuaBundleExample1.ttl",
+    "owl:imports": "fhir:fhir.ttl",
+    "@type": "owl:Ontology"
+  }
+}
