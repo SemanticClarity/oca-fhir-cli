@@ -1,4 +1,27 @@
 {
+"@context": {
+"@version": 1.1,
+"dpv": "http://www.w3.org/ns/dpv#",
+"dpv-nace": "http://www.w3.org/ns/dpv-nace#"
+},
+"name": "cvc-patientbundle-example",
+"type": "spec/schema_base/1.0",
+"conformance-type": "ca-baseline",
+"conformance-spec": ["http://hl7.org/fhir/ca/baseline/StructureDefinition/profile-immunization"],
+"attributes": 
+   {
+        "fhir:Bundle" : "",
+        "" : "",
+        "" : ""
+   },
+"description": "FHIR [object Object] resource json object transformed to jsonld  for OCA",
+"classification": ["UMLS:C0008960", "GICS:351030"],
+"issued_by": "fhir-oca-cli",
+"purpose": {
+  "@id": "dpv:MedicalHealth",
+  "@type": "@id"
+},
+"conformance-payload": {
      "@context": [
       "https://fhircat.org/fhir-r4/original/contexts/bundle.context.jsonld",
       "https://fhircat.org/fhir-r4/original/contexts/immunization.context.jsonld",
@@ -20,10 +43,10 @@
       }
       ],
     "nodeRole": "fhir:treeRoot",
-    "@id": "Bundle/568971356",
+    "@id": "Bundle/",
     "@included": {
-      "@id": "Bundle/568971356.ttl",
-      "owl:versionIRI": "Bundle/568971356.ttl",
+      "@id": "Bundle/.ttl",
+      "owl:versionIRI": "Bundle/.ttl",
       "owl:imports": "fhir:fhir.ttl",
       "@type": "owl:Ontology"
     },
@@ -58,7 +81,7 @@
         "resource": {
           "resourceType": "fhir:Patient",
           "id": {
-            "value": "135498413"
+            "value": ""
           },
           "meta": {
             "profile": [
@@ -77,7 +100,7 @@
                 "coding": [
                   {
                     "code": {
-                      "value": "D"
+                      "value": ""
                     },
                     "system": {
                       "value": "http://example.org/CodeSystem/cdccvrs-dataextractype-codesystem"
@@ -97,7 +120,7 @@
                 "coding": [
                   {
                     "code": {
-                      "value": "2135-2"
+                      "value": ""
                     },
                     "system": {
                       "value": "https://hl7.org/fhir/us/core/CodeSystem-cdcrec.json"
@@ -117,7 +140,7 @@
                 "coding": [
                   {
                     "code": {
-                      "value": "1002-5"
+                      "value": ""
                     },
                     "index": 0
                   }
@@ -133,7 +156,7 @@
                 "coding": [
                   {
                     "code": {
-                      "value": "2076-8"
+                      "value": ""
                     },
                     "index": 0
                   }
@@ -149,7 +172,7 @@
                 "coding": [
                   {
                     "code": {
-                      "value": "2106-3"
+                      "value": ""
                     },
                     "index": 0
                   }
@@ -165,7 +188,7 @@
                 "coding": [
                   {
                     "code": {
-                      "value": "2131-1"
+                      "value": ""
                     },
                     "index": 0
                   }
@@ -181,7 +204,7 @@
                 "coding": [
                   {
                     "code": {
-                      "value": "2054-5"
+                      "value": ""
                     },
                     "index": 0
                   }
@@ -197,7 +220,7 @@
                 "coding": [
                   {
                     "code": {
-                      "value": "2028-9"
+                      "value": ""
                     },
                     "index": 0
                   }
@@ -209,7 +232,7 @@
           "identifier": [
             {
               "value": {
-                "value": "135498413"
+                "value": ""
               },
               "type": {
                 "coding": [
@@ -234,11 +257,11 @@
           "name": [
             {
               "family": {
-                "value": "Smith"
+                "value": ""
               },
               "given": [
                 {
-                  "value": "Mary",
+                  "value": "",
                   "index": 0
                 }
               ],
@@ -255,39 +278,39 @@
             }
           ],
           "gender": {
-            "value": "F"
+            "value": ""
           },
           "birthDate": {
-            "value": "1968-05-27"
+            "value": ""
           },
           "address": [
             {
               "line": [
                 {
-                  "value": "123 Main Street",
+                  "value": "",
                   "index": 0
                 },
                 {
-                  "value": "Apt. 456",
+                  "value": "",
                   "index": 1
                 }
               ],
               "city": {
-                "value": "Springfield"
+                "value": ""
               },
               "district": {
-                "value": "13121"
+                "value": ""
               },
               "state": {
-                "value": "GA"
+                "value": ""
               },
               "postalCode": {
-                "value": "30301"
+                "value": ""
               },
               "index": 0
             }
           ],
-          "@id": "#135498413"
+          "@id": "#"
         },
         "index": 0
       },
@@ -295,7 +318,7 @@
         "resource": {
           "resourceType": "fhir:Immunization",
           "id": {
-            "value": "CdcCvrsImmunizationExample-568971356"
+            "value": "CdcCvrsImmunizationExample-"
           },
           "meta": {
             "profile": [
@@ -314,7 +337,7 @@
                 "coding": [
                   {
                     "code": {
-                      "value": "D"
+                      "value": ""
                     },
                     "system": {
                       "value": "http://example.org/CodeSystem/cdccvrs-dataextractype-codesystem"
@@ -331,7 +354,7 @@
                 "value": "vTrcksPIN"
               },
               "valueString": {
-                "value": "123456"
+                "value": ""
               },
               "index": 1
             },
@@ -363,7 +386,7 @@
                 "coding": [
                   {
                     "code": {
-                      "value": "YES"
+                      "value": ""
                     },
                     "system": {
                       "value": "http://terminology.hl7.org/ValueSet/v2-0136"
@@ -383,7 +406,7 @@
                 "coding": [
                   {
                     "code": {
-                      "value": "NO"
+                      "value": ""
                     },
                     "system": {
                       "value": "http://terminology.hl7.org/ValueSet/v2-0136"
@@ -403,7 +426,7 @@
                 "coding": [
                   {
                     "code": {
-                      "value": "UNK"
+                      "value": ""
                     },
                     "system": {
                       "value": "http://terminology.hl7.org/ValueSet/v2-0136"
@@ -419,7 +442,7 @@
           "identifier": [
             {
               "value": {
-                "value": "568971356"
+                "value": ""
               },
               "system": {
                 "value": "http://terminology.hl7.org/CodeSystem/v2-0203#MR"
@@ -428,13 +451,13 @@
             }
           ],
           "status": {
-            "value": "YES"
+            "value": ""
           },
           "vaccineCode": {
             "coding": [
               {
                 "code": {
-                  "value": "207"
+                  "value": ""
                 },
                 "system": {
                   "value": "http://example.org/CodeSystem/cdc-vaccine-eua-codeset"
@@ -446,20 +469,20 @@
           },
           "patient": {
             "reference": {
-              "value": "Patient/CdcCvrsPatientExample-135498413"
+              "value": "Patient/CdcCvrsPatientExample-"
             },
             "fhir:link": {
-              "@id": "../Patient/CdcCvrsPatientExample1-135498413",
+              "@id": "../Patient/CdcCvrsPatientExample1-",
               "@type": "fhir:Patient"
             }
           },
           "occurrenceDateTime": {
-            "value": "2020-12-15"
+            "value": ""
           },
           "protocolApplied": [
             {
               "doseNumberPositiveInt": {
-                "value": 2
+                "value": 
               },
               "seriesDosesPositiveInt": {
                 "value": 2
@@ -468,16 +491,16 @@
             }
           ],
           "lotNumber": {
-            "value": "A###A"
+            "value": ""
           },
           "expirationDate": {
-            "value": "2021-06-18"
+            "value": ""
           },
           "site": {
             "coding": [
               {
                 "code": {
-                  "value": "LA"
+                  "value": ""
                 },
                 "system": {
                   "value": "http://terminology.hl7.org/ValueSet/v2-0163"
@@ -491,7 +514,7 @@
             "coding": [
               {
                 "code": {
-                  "value": "C38238"
+                  "value": ""
                 },
                 "system": {
                   "value": "http://terminology.hl7.org/ValueSet/v2-0162"
@@ -525,9 +548,12 @@
               }
             ]
           },
-          "@id": "#CdcCvrsImmunizationExample1-568971356"
+          "@id": "#CdcCvrsImmunizationExample1-"
         },
         "index": 1
       }
     ]
+}
+,
+]
 }

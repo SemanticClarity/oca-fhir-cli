@@ -30,16 +30,7 @@ function loadProfile(key) {
 }
 
 const main = async() => {
-  /*
-  var cvcimmunizationdoc = fs.readFileSync('examples/cvc-immunizationpassport/patient-bundle-instance-example.json');
-  var patientpassport = await JSON.parse(cvcimmunizationdoc);
-  if (fhirpath.evaluate(patientpassport, 'Bundle.where(type = \'collection\')')) {
-    var retval = fhirpath.evaluate(patientpassport, 'Bundle.entry.resourceType');
-    for (var loop = 0; loop < retval.length; loop++) {
-      console.log("retval["+loop+"]: "+ retval[loop]);
-    }
-  }
-  */
+  
   var argv = require('yargs/yargs')(process.argv.slice(2)).argv;
 
   var configFilePath;
@@ -90,8 +81,13 @@ const main = async() => {
       console.log("Exiting: Input CSV file does not exist["+csvfile+"]");
       exit(2);
     }
-    let fhirbundle = await converter.generateFHIRBundle(config,profile_name,csvfile);
+<<<<<<< Updated upstream
+    let fhirbundle =  converter.generateFHIRBundle(config,profile_name,csvfile);
     //.then(converter.generateOCAArtifactsFromR4Bundle(config, fhirbundle, profile_name));
+=======
+    let fhirbundle = await converter.generateFHIRBundle(config,profile_name,csvfile)
+     .then(converter.generateOCAArtifactsFromR4Bundle(config, fhirbundle, profile_name));
+>>>>>>> Stashed changes
   }
 }
 

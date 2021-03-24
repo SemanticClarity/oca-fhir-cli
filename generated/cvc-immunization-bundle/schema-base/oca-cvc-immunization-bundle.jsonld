@@ -1,0 +1,262 @@
+{
+  "@context": {
+    "@vocab": "http://hl7.org/fhir/",
+    "@version": 1.1,
+    "domain": {
+      "@type": "@vocab"
+    },
+    "dpv": "http://www.w3.org/ns/dpv#",
+    "dpv-gdpr": "http://www.w3.org/ns/dpv-gdpr#",
+    "dpv-nace": "http://www.w3.org/ns/dpv-nace#"
+  },
+  "name": "cvc-patientbundle-example",
+  "type": "spec/schema_base/1.0",
+  "conformance-type": "ca-baseline",
+  "conformance-spec": [
+    "http://hl7.org/fhir/ca/baseline/StructureDefinition/profile-immunization"
+  ],
+  "attributes": {
+    "Bundle": "hl:zQmNkzJuRdavCvPX8Uag93EyqYQMXR8zaVzQt8HVxbdHTm6",
+    "Immunization": "hl:zQmXnNzNSzfNFycXFFrFszhLkQ3xkHbziQYzrYxuJRpbnsH",
+    "Patient": "hl:zQmTQtUcMv8sgqk4SpQoo2TJQxKVW13EJnph6A76Sbj8yAM"
+  },
+  "description": "FHIR collection resource json object transformed to jsonld  for OCA",
+  "classification": [
+    "UMLS:C0008960",
+    "GICS:351030"
+  ],
+  "issued_by": "fhir-oca-cli",
+  "purpose": {
+    "@id": "dpv:MedicalHealth",
+    "@type": "@id"
+  },
+  "conformance-payload": {
+    "resourceType": "Bundle",
+    "id": "DHIR",
+    "meta": {
+      "versionId": "1.1.5",
+      "lastUpdated": "2020-12-07"
+    },
+    "type": "collection",
+    "entry": [
+      {
+        "resourceType": "Immunization",
+        "id": "Immunization01",
+        "meta": {
+          "lastUpdated": "2017-07-25T15:43:54.271-05:00"
+        },
+        "extension": [
+          {
+            "url": "[base-structure]/ca-on-immunizations-extension-public-health-unit",
+            "valueString": "Toronto PHU"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "61153008",
+              "display": "MMR"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "7171000087106",
+              "display": "MMR Priorix GSK"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/Patient1234"
+        },
+        "occurrenceDateTime": "2016-02-14T10:22:00-05:00",
+        "primarySource": true,
+        "lotNumber": "Some Lot",
+        "performer": [
+          {
+            "function": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                  "code": "AP",
+                  "display": "Administering Provider"
+                }
+              ]
+            },
+            "actor": {
+              "reference": "Practitioner/Practitioner1234"
+            }
+          }
+        ]
+      },
+      {
+        "resourceType": "Patient",
+        "id": "Patient1234",
+        "identifier": [
+          {
+            "system": "[id-system-local-base]/ca-on-panorama-immunization-id",
+            "value": "95ZWBKWTC5"
+          },
+          {
+            "system": "[id-system-global-base]/ca-on-patient-hcn",
+            "value": "9393881587"
+          }
+        ],
+        "name": [
+          {
+            "family": "Doe",
+            "given": [
+              "John",
+              "W."
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2012-02-14"
+      },
+      {
+        "resourceType": "Practitioner",
+        "id": "Practitioner1234",
+        "name": [
+          {
+            "family": "Nurse",
+            "given": [
+              "Best"
+            ]
+          }
+        ],
+        "qualification": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "[code-system-local-base]/ca-on-immunizations-practitionerdesignation",
+                  "code": "RN",
+                  "display": "Registered Nurse"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "resourceType": "ImmunizationRecommendation",
+        "id": "ImmunizationRecommendation01",
+        "patient": {
+          "reference": "Patient/Patient1234"
+        },
+        "date": "2016-07-28T11:04:15.817-05:00",
+        "recommendation": [
+          {
+            "targetDisease": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "36989005",
+                  "display": "Mumps"
+                }
+              ]
+            },
+            "forecastStatus": {
+              "coding": [
+                {
+                  "system": " http://snomed.info/sct",
+                  "code": "8191000087109",
+                  "display": "Overdue"
+                }
+              ]
+            },
+            "dateCriterion": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": " http://loinc.org ",
+                      "code": "30980-7",
+                      "display": "Date vaccine due"
+                    }
+                  ]
+                },
+                "value": "2016-06-01"
+              }
+            ]
+          },
+          {
+            "targetDisease": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "14189004",
+                  "display": "Measles"
+                }
+              ]
+            },
+            "forecastStatus": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "8191000087109",
+                  "display": "Overdue"
+                }
+              ]
+            },
+            "dateCriterion": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": " http://loinc.org ",
+                      "code": "30980-7",
+                      "display": "Date vaccine due"
+                    }
+                  ]
+                },
+                "value": "2016-06-01"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "attr_blinding": [
+    "Bundle.timestamp"
+  ],
+  "attr_blinding_refs": [
+    "Immunization.reportOrigin",
+    "Immunization.vaccineCode",
+    "Immunization.location",
+    "Immunization.performer.actor",
+    "Immunization.primarySource",
+    "Immunization.encounter",
+    "Immunization.recorded",
+    "Patient.photo",
+    "Patient.deceasedDateTime",
+    "Patient.generalPractitioner",
+    "Patient.link",
+    "Patient.telecom",
+    "Patient.birthDate",
+    "Patient.maritalStatus",
+    "Patient.contact",
+    "Patient.multipleBirthInteger",
+    "Patient.communication",
+    "Patient.multipleBirthBoolean",
+    "Patient.gender",
+    "Patient.managingOrganization",
+    "Patient.identifier",
+    "Patient.name",
+    "Patient.deceasedBoolean",
+    "Patient.address",
+    "Patient.active",
+    "Practitioner.gender",
+    "Practitioner.active",
+    "Practitioner.photo",
+    "Practitioner.name",
+    "Practitioner.birthDate",
+    "Practitioner.communication",
+    "Practitioner.address",
+    "Practitioner.identifier",
+    "Practitioner.qualification",
+    "Practitioner.telecom"
+  ]
+}
