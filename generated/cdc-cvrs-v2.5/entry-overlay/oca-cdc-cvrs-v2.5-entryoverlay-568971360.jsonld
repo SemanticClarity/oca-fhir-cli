@@ -1,0 +1,80 @@
+{
+"@context": {
+"@vocab" : "http://hl7.org/fhir/",
+"@version": 1.1,
+"domain": {"@type": "@vocab"}
+},
+"name": "fhir:Bundle",
+"ocatype": "spec/overlay/entry/1.0",
+"description": "FHIR collection resource json object transformed to OCA Format Overlay for CVC Immunization Passport",
+"classification": ["UMLS:C0008960", "GICS:351030"],
+"issued_by": "FHIR OCA WG",
+"purpose": {
+  "@id": "dpv:MedicalHealth",
+  "@type": "@id"
+ },
+"schema_base": "hl:zQmdXanEjcWxVHdHwCJ5dX1VLGDCaXuLwyAyNUkpBBpnhaj",
+"conformance-type": "us-core",
+"conformance-spec": ["http://hl7.org/fhir/us/core/StructureDefinition/"],, 
+"attr_entries": [
+   {
+  "resourceName": "Bundle",
+  "attr_entries": {
+    "Bundle.entry.request.method": [
+      "GET ",
+      " HEAD ",
+      " POST ",
+      " PUT ",
+      " DELETE ",
+      " PATCH"
+    ],
+    "Bundle.type": [
+      "document ",
+      " message ",
+      " transaction ",
+      " transaction-response ",
+      " batch ",
+      " batch-response ",
+      " history ",
+      " searchset ",
+      " collection"
+    ],
+    "Bundle.entry.search.mode": [
+      "match ",
+      " include ",
+      " outcome - why this is in the result set"
+    ]
+  }
+}
+    ,{
+  "resourceName": "Patient",
+  "attr_entries": {
+    "Patient.link.type": [
+      "replaced-by ",
+      " replaces ",
+      " refer ",
+      " seealso"
+    ],
+    "Patient.contact.gender": [
+      "male ",
+      " female ",
+      " other ",
+      " unknown"
+    ],
+    "Patient.gender": [
+      "male ",
+      " female ",
+      " other ",
+      " unknown"
+    ]
+  }
+}    ,{
+  "resourceName": "Immunization",
+  "attr_entries": {
+    "Immunization.status": [
+      "completed ",
+      " entered-in-error ",
+      " not-done"
+    ]
+  }
+}]}

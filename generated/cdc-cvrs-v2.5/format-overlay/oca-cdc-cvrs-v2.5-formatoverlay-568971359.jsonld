@@ -1,0 +1,20 @@
+{
+"@context": {
+"@vocab" : "http://hl7.org/fhir/",
+"@version": 1.1,
+"domain": {"@type": "@vocab"}
+},
+"name": "fhir:Bundle",
+"ocatype": "spec/overlay/format/1.0",
+"conformance-type": "us-core",
+"conformance-spec": ["http://hl7.org/fhir/ca/core/StructureDefinition/"],
+"description": "FHIR collection resource json object transformed to OCA Format Overlay",
+"classification": ["UMLS:C0008960", "GICS:351030"],
+"issued_by": "FHIR OCA WG",
+"schema_base": "hl:zQmW1FkuPR1QN5Ynd5vKF5bBy8epfFFiPx9x1Wz3m74E62E",
+"purpose": {
+  "@id": "dpv:MedicalHealth",
+  "@type": "@id"
+ },
+
+}

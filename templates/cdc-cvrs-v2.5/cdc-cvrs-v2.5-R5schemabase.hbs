@@ -1,0 +1,49 @@
+{
+"@context": {
+"@vocab" : "http://hl7.org/fhir/",
+"@version": 1.1,
+"domain": {"@type": "@vocab"},
+"dpv": "http://www.w3.org/ns/dpv#",
+"dpv-gdpr": "http://www.w3.org/ns/dpv-gdpr#",
+"dpv-nace": "http://www.w3.org/ns/dpv-nace#"
+},
+"name": "{{@name}}",
+"type": "{{@oca-base-schema-type}}",
+"conformance-type": "{{@fhir-profile-ref}}",
+"conformance-spec": ["{{@fhir-profile-uri}}"],
+"attributes": 
+   {
+        "{{@root.resourceType}}" : "{{{getHashlinkForPrimitive @root.resourceType}}}",
+    {{#each entry}} 
+        {{#if @last}} 
+        "{{resource.resourceType}}" : "{{{getHashlinkForPrimitive resource.resourceType}}}"
+        {{else}}
+        "{{resource.resourceType}}" : "{{{getHashlinkForPrimitive resource.resourceType}}}",
+        {{/if}}
+    {{/each}}
+   },
+"description": "FHIR {{type}} resource json object transformed to jsonld {{@oca-artifact-type}} for OCA",
+"classification": ["{{@umls-cui}}", "GICS:351030"],
+"issued_by": "{{@author}}",
+"purpose": {
+  "@id": "{{@dpv-purpose}}",
+  "@type": "@id"
+},
+"conformance-payload": {{{getConformancePayload @root}}}
+{{~#if (hasBITdefined @root.resourceType)~}}
+ ,
+"attr_blinding": [
+    {{{getBITProperties @root.resourceType}}}
+    {{#each entry}} 
+        {{#if (hasBITdefined resource.resourceType)}}
+            {{#if @first}} 
+                ,{{{getBITProperties resource.resourceType}}}
+            {{else}}
+                ,{{{getBITProperties resource.resourceType}}}
+            {{~/if~}}
+        {{~/if~}}
+    {{~/each~}}
+    ]
+{{~/if~}}
+  
+}
