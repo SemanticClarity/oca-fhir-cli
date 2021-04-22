@@ -7,7 +7,7 @@
 "name": "fhir:Bundle",
 "ocatype": "spec/overlay/format/1.0",
 "conformance-type": "us-core",
-"conformance-spec": ["http://hl7.org/fhir/ca/core/StructureDefinition/"],
+"conformance-spec": ["http://hl7.org/fhir/us/core/StructureDefinition/"],
 "description": "FHIR collection resource json object transformed to OCA Format Overlay",
 "classification": ["UMLS:C0008960", "GICS:351030"],
 "issued_by": "FHIR OCA WG",
@@ -15,6 +15,6 @@
 "purpose": {
   "@id": "dpv:MedicalHealth",
   "@type": "@id"
- },
+ }
 
 }

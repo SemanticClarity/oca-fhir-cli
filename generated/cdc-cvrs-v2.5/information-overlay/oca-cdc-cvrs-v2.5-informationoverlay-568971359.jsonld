@@ -8,7 +8,7 @@
 "ocatype": "spec/overlay/information/1.0",
 "role": "",
 "conformance-type": "us-core",
-"conformance-spec": ["http://hl7.org/fhir/ca/core/StructureDefinition/"],
+"conformance-spec": ["http://hl7.org/fhir/us/core/StructureDefinition/"],
 "description": "FHIR collection resource json object transformed to OCA Format Overlay",
 "classification": ["UMLS:C0008960", "GICS:351030"],
 "issued_by": "FHIR OCA WG",
