@@ -13,7 +13,7 @@
   "@id": "dpv:MedicalHealth",
   "@type": "@id"
  },
-"schema_base": "hl:zQmfEKRyaLisBfmwbaBW5ye9mZY5GD5mqvEbkb5cK7BwABj",
+"schema_base": "hl:zQmZK3UWq4aZgJcqR4WNDvpJ1VcvMHxUa3AVhtoQteH4vER",
 "conformance-type": "us-core",
 "conformance-spec": ["http://hl7.org/fhir/us/core/StructureDefinition/"],, 
 "attr_entries": [
