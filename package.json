@@ -8,7 +8,6 @@
   "license": "Apache 2.0",
   "dependencies": {
     "configstore": "^5.0.1",
-    "fhir": "^4.7.11",
     "fhirpath": "^2.7.1",
     "fhirpath.js": "^0.0.6",
     "handlebars": "^4.7.7",
