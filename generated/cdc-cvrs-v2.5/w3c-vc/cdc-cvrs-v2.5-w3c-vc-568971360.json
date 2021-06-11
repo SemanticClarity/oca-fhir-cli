@@ -27,7 +27,7 @@
       "disease": "COVID-19",
       "atcCode": "207"
     },
-    evidence: []
+    "evidence": []
   }
  
 }

@@ -27,7 +27,7 @@
       "disease": "COVID-19",
       "atcCode": "208"
     },
-    evidence: []
+    "evidence": []
   }
  
 }
