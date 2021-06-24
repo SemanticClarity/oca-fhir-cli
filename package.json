@@ -7,6 +7,7 @@
   "author": "Mukundan Parthasarathy",
   "license": "Apache 2.0",
   "dependencies": {
+    "axios": "^0.21.1",
     "configstore": "^5.0.1",
     "fhirpath": "^2.7.1",
     "fhirpath.js": "^0.0.6",
