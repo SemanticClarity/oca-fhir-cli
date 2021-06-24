@@ -4,6 +4,7 @@ var path = require('path');
 var os   = require('os');
 var Handlebars = require("handlebars");
 const hbs = require('./lib/hbs-utils');
+const ghphbs = require('./lib/ghp-hbsutils');
 //const fhirpath = require('fhirpath.js');
 const hashlinkutil = require('./lib/hashlink-utils');
 const ConfigStore = require('configstore');
