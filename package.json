@@ -16,6 +16,7 @@
     "node-cache": "^5.1.2",
     "papaparse": "^5.3.0",
     "recursive-readdir": "^2.2.2",
+    "xlsx": "^0.17.0",
     "yargs": "^16.2.0"
   }
 }
