@@ -3,7 +3,7 @@
   "id": "DHIR",
   "meta": {
       "versionId": "1.1.5",
-      "lastUpdated": "2020-12-07"
+      "lastUpdated": "2021-06-21"
   },
   "type": "collection",
   "entry": [
@@ -11,7 +11,7 @@
       "resourceType": "Immunization",
       "id": "Immunization01",
       "meta":{
-        "lastUpdated":"2017-07-25T15:43:54.271-05:00"
+        "lastUpdated":"2021-06-20T15:43:54.271-05:00"
       },
       "extension": [
         {
@@ -24,22 +24,17 @@
         "coding": [
           {
             "system": "http://snomed.info/sct",
-            "code": "61153008",
-            "display": "MMR"
-          },
-          {
-            "system": "http://snomed.info/sct",
-            "code": "7171000087106",
-            "display": "MMR Priorix GSK"
+            "code": "28581000087106",
+            "display": "PFIZER-BIONTECH COVID-19 VACCINE messenger ribonucleic acid 30 micrograms per 0.3 milliliter suspension"
           }
         ]
       },
       "patient": {
         "reference": "Patient/Patient1234"
       },
-      "occurrenceDateTime": "2016-02-14T10:22:00-05:00",
+      "occurrenceDateTime": "2021-05-14T10:22:00-05:00",
       "primarySource": true,
-      "lotNumber": "Some Lot",
+      "lotNumber": "AZ45402",
       "performer": [
         {
           "function": {
@@ -79,7 +74,7 @@
         }
       ],
       "gender": "male",
-      "birthDate": "2012-02-14"
+      "birthDate": "2002-02-14"
     },
     {
       "resourceType": "Practitioner",
@@ -118,9 +113,9 @@
           "targetDisease": {
             "coding": [
               {
-                "system": "http://snomed.info/sct",
-                "code": "36989005",
-                "display": "Mumps"
+                "code": "840539006",
+                "system": "https://cvc.canimmunize.ca/v3/ValueSet/Disease",
+                "display": "COVID-19"
               }
             ]
         },
@@ -144,7 +139,7 @@
                 }
               ]
             },
-            "value": "2016-06-01"
+            "value": "2021-05-01"
           }
         ]
       },
