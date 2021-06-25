@@ -14,11 +14,11 @@ The current release contains the following example modules:
 ## Usage
 
 ### Pre-requisites
-Nodejs v14.15.3 or later (very likely that this project will rely on nodejs v14 or later due to dependencies)
+Nodejs v14.15.3 or later (this project relies on nodejs v14 or later due to dependencies)
 
-`$node oca-fhir-cli.js --profile cvc2ghp --r4bundle .\examples\cvc-immunization-bundle\patient-bundle-instance-example.json`
+`$node oca-fhir-cli.js --profile cvc2ghp --r4bundle ./examples/cvc-immunization-bundle/patient-bundle-instance-example.json`
 
-`$node oca-fhir-cli.js --profile cdc-cvrs-v2.5 --csv .\examples\cdc-cvrs-v2.5\sample-data.csv`
+`$node oca-fhir-cli.js --profile cdc-cvrs-v2.5 --csv ./examples/cdc-cvrs-v2.5/sample-data.csv`
 
 
 
