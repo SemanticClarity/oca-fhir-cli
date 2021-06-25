@@ -564,6 +564,11 @@
   dependencies:
     "graceful-fs" "^4.1.6"
 
+"jsonpath-plus@^5.1.0":
+  "integrity" "sha512-890w2Pjtj0iswAxalRlt2kHthi6HKrXEfZcn+ZNZptv7F3rUGIeDuZo+C+h4vXBHLEsVjJrHeCm35nYeZLzSBQ=="
+  "resolved" "https://registry.npmjs.org/jsonpath-plus/-/jsonpath-plus-5.1.0.tgz"
+  "version" "5.1.0"
+
 "kind-of@^3.1.0":
   "integrity" "sha1-MeohpzS6ubuw8yRm2JOupR5KPGQ="
   "resolved" "https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz"
