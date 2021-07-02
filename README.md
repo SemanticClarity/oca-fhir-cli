@@ -9,7 +9,7 @@ The current release contains the following example modules:
 2. CDC Covid-19 Vaccination Reporting example (work in progress): Input file example is provided in csv format, [per CDC Covid-19 reporting specification](https://www.cdc.gov/vaccines/covid-19/reporting/requirements/index.html). The tool will covert this input file in to a FHIR R4 bundle internally. Currently, this input csv is mapped to a FHIR R4 Bundle with *Patient, Immunization*, resources. This mapping is customizable via the use of a *ConceptMap* (provided), but the recommended approach is to follow the community best practice of creating a FHIR Implementation Guide based.
 
 
-![oca-fhir-cli usage scenario](doc/images/SemanticDataPipeline-FHIR.png)
+![oca-fhir-cli usage scenario](doc/images/FOSDP-07-02.png)
 
 ## Usage
 
