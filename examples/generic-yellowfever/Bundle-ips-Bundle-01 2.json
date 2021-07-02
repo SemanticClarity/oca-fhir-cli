@@ -1,0 +1,303 @@
+{
+  "resourceType": "Bundle",
+  "id": "ips-Bundle-01",
+  "type": "document",
+  "timestamp": "2021-02-10T14:30:00+01:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:81332b57-f5e7-46a7-951b-d289906379d6",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "81332b57-f5e7-46a7-951b-d289906379d6",
+        "identifier": {
+          "system": "urn:oid:2.16.724.4.8.10.200.10",
+          "value": "b3d57a47-3144-4c3d-a852-52afc780fc46"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "code": "82593-5",
+              "system": "http://loinc.org",
+              "display": "Immunization summary report"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cb6fc6f7-cc14-4abf-a4a8-39280fd12abc"
+        },
+        "date": "2021-02-10T14:30:00+01:00",
+        "author": [
+          {
+            "reference": "urn:uuid:d7a490a1-d267-4785-ac98-db56748827fb"
+          }
+        ],
+        "title": "Yellow Fever Vaccination Digital Certificate",
+        "attester": [
+          {
+            "mode": "legal",
+            "time": "2020-12-27T14:30:00+01:00",
+            "party": {
+              "reference": "urn:uuid:d78ee322-5d8f-42e7-9bbd-5dea661f73f1"
+            }
+          }
+        ],
+        "custodian": {
+          "reference": "urn:uuid:b66c1b23-21e9-4bd0-9cd7-edd806c126de"
+        },
+        "section": [
+          {
+            "title": "Vaccinations",
+            "code": {
+              "coding": [
+                {
+                  "code": "11369-6",
+                  "system": "http://loinc.org",
+                  "display": "Hx of Immunization"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div>Nothing here</div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cb6fc6f7-cc14-4abf-a4a8-39280fd12abc",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "cb6fc6f7-cc14-4abf-a4a8-39280fd12abc",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.it/sid/codiceFiscale",
+            "value": "RSSMRA97L67Z602C"
+          }
+        ],
+        "name": [
+          {
+            "family": "Rossi",
+            "given": [
+              "Maria"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1997-07-28"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6",
+      "resource": {
+        "resourceType": "ImmunizationRecommendation",
+        "id": "c220e36c-eb67-4fc4-9ba1-2fabc52acec6",
+        "patient": {
+          "reference": "urn:uuid:cb6fc6f7-cc14-4abf-a4a8-39280fd12abc"
+        },
+        "date": "2021-02-05",
+        "recommendation": [
+          {
+            "vaccineCode": [
+              {
+                "coding": [
+                  {
+                    "code": "56844000",
+                    "system": "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips",
+                    "display": "Yellow fever vaccine"
+                  }
+                ]
+              }
+            ],
+            "forecastStatus": {
+              "coding": [
+                {
+                  "code": "contraindicated",
+                  "system": "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status"
+                }
+              ]
+            },
+            "forecastReason": [
+              {
+                "coding": [
+                  {
+                    "code": "MEDPREC",
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+                    "display": "medical precaution"
+                  }
+                ]
+              }
+            ],
+            "dateCriterion": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "code": "30980-7",
+                      "system": "http://loinc.org",
+                      "display": "Date vaccine due"
+                    }
+                  ]
+                },
+                "value": "2021-02-07"
+              }
+            ],
+            "doseNumberPositiveInt": 1,
+            "seriesDosesPositiveInt": 1,
+            "supportingImmunization": [
+              {
+                "reference": "urn:uuid:c3c59f8e-0f82-45b7-bcce-b26f27366026"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d78ee322-5d8f-42e7-9bbd-5dea661f73f1",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "d78ee322-5d8f-42e7-9bbd-5dea661f73f1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://terminology.hl7.it/CodeSystem/minsan-hsp",
+            "value": "090903"
+          }
+        ],
+        "name": "AZ. OSPEDALIERO - UNIVERSITARIA CAREGGI"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b66c1b23-21e9-4bd0-9cd7-edd806c126de",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "b66c1b23-21e9-4bd0-9cd7-edd806c126de",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://terminology.hl7.it/CodeSystem/minsan-regione",
+            "value": "090"
+          }
+        ],
+        "name": "Regione Toscana"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d7a490a1-d267-4785-ac98-db56748827fb",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "d7a490a1-d267-4785-ac98-db56748827fb",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.it/sid/codiceFiscale",
+            "value": "VRDRCR70H08H703B"
+          }
+        ],
+        "name": [
+          {
+            "family": "Antonio",
+            "given": [
+              "Mark"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c3c59f8e-0f82-45b7-bcce-b26f27366026",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "c3c59f8e-0f82-45b7-bcce-b26f27366026",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+          ]
+        },
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "code": "56844000",
+              "system": "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips",
+              "display": "Yellow Fever Vaccine"
+            }
+          ],
+          "text": "Yellow Fever Vaccine"
+        },
+        "patient": {
+          "reference": "urn:uuid:cb6fc6f7-cc14-4abf-a4a8-39280fd12abc"
+        },
+        "occurrenceDateTime": "2021-01-10",
+        "location": {
+          "reference": "urn:uuid:b8925b58-bf5e-4c78-962f-2c9f17285713"
+        },
+        "manufacturer": {
+          "display": "Sanofi Pasteur YF-VAX"
+        },
+        "lotNumber": "B1235742",
+        "performer": [
+          {
+            "actor": {
+              "reference": "urn:uuid:d78ee322-5d8f-42e7-9bbd-5dea661f73f1",
+              "display": "Ospedale Careggi - Firenze"
+            }
+          }
+        ],
+        "protocolApplied": [
+          {
+            "targetDisease": [
+              {
+                "coding": [
+                  {
+                    "code": "16541001",
+                    "system": "http://snomed.info/sct",
+                    "display": "Yellow fever (disorder)"
+                  }
+                ]
+              }
+            ],
+            "doseNumberPositiveInt": 1,
+            "seriesDosesPositiveInt": 1
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b8925b58-bf5e-4c78-962f-2c9f17285713",
+      "resource": {
+        "resourceType": "Location",
+        "id": "b8925b58-bf5e-4c78-962f-2c9f17285713",
+        "name": "AZ. OSPEDALIERO - UNIVERSITARIA CAREGGI",
+        "address": {
+          "city": "Firenze",
+          "country": "IT"
+        }
+      }
+    }
+  ]
+}

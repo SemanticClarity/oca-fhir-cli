@@ -1,0 +1,30 @@
+{
+  "resourceName": "Contract_ValuedItem",
+  "attr_information": {
+    "Contract_ValuedItem.modifierExtension": "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element\u0027s descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+    "Contract_ValuedItem.responsible": "Who will make payment.",
+    "Contract_ValuedItem.effectiveTime": "Indicates the time during which this Contract ValuedItem information is effective.",
+    "Contract_ValuedItem.quantity": "Specifies the units by which the Contract Valued Item is measured or counted, and quantifies the countable or measurable Contract Valued Item instances.",
+    "Contract_ValuedItem.securityLabelNumber": "A set of security labels that define which terms are controlled by this condition.",
+    "Contract_ValuedItem._factor": "Extensions for factor",
+    "Contract_ValuedItem._payment": "Extensions for payment",
+    "Contract_ValuedItem.payment": "Terms of valuation.",
+    "Contract_ValuedItem.identifier": "Identifies a Contract Valued Item instance.",
+    "Contract_ValuedItem._securityLabelNumber": "Extensions for securityLabelNumber",
+    "Contract_ValuedItem.factor": "A real number that represents a multiplier used in determining the overall value of the Contract Valued Item delivered. The concept of a Factor allows for a discount or surcharge multiplier to be applied to a monetary amount.",
+    "Contract_ValuedItem.paymentDate": "When payment is due.",
+    "Contract_ValuedItem._points": "Extensions for points",
+    "Contract_ValuedItem.entityReference": "Specific type of Contract Valued Item that may be priced.",
+    "Contract_ValuedItem.id": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+    "Contract_ValuedItem._paymentDate": "Extensions for paymentDate",
+    "Contract_ValuedItem._linkId": "Extensions for linkId",
+    "Contract_ValuedItem._effectiveTime": "Extensions for effectiveTime",
+    "Contract_ValuedItem.net": "Expresses the product of the Contract Valued Item unitQuantity and the unitPriceAmt. For example, the formula: unit Quantity * unit Price (Cost per Point) * factor Number  * points \u003d net Amount. Quantity, factor and points are assumed to be 1 if not supplied.",
+    "Contract_ValuedItem.unitPrice": "A Contract Valued Item unit valuation measure.",
+    "Contract_ValuedItem.entityCodeableConcept": "Specific type of Contract Valued Item that may be priced.",
+    "Contract_ValuedItem.linkId": "Id  of the clause or question text related to the context of this valuedItem in the referenced form or QuestionnaireResponse.",
+    "Contract_ValuedItem.points": "An amount that expresses the weighting (based on difficulty, cost and/or resource intensiveness) associated with the Contract Valued Item delivered. The concept of Points allows for assignment of point values for a Contract Valued Item, such that a monetary amount can be assigned to each point.",
+    "Contract_ValuedItem.extension": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+    "Contract_ValuedItem.recipient": "Who will receive payment."
+  }
+}

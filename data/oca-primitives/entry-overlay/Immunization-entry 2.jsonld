@@ -1,0 +1,27 @@
+{
+"@context": {
+"@vocab" : "http://hl7.org/fhir/",
+"@version": 1.1,
+"domain": {"@type": "@vocab"}
+},
+"name": "Immunization",
+"ocatype": "spec/overlay/entry/1.0",
+"conformance-type": "CA-Core",
+"conformance-spec": "http://hl7.org/fhir/ca/core/StructureDefinition/",
+"description": "FHIR Immunization resource json object transformed to OCA Format Overlay",
+"classification": ["UMLS:C0008960", "GICS:351030"],
+"issued_by": "FHIR OCA WG",
+"schema_base": "hl:zQmbZ4x3kFgTiGb6hiW9vjVVeL1tYNpDJFxd9TB1DjwXQpa",
+"purpose": {
+  "@id": "dpv:MedicalHealth",
+  "@type": "@id"
+ }
+, 
+"attr_entries": {
+  "Immunization.status": [
+    "completed ",
+    " entered-in-error ",
+    " not-done"
+  ]
+}
+}

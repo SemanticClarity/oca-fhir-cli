@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "@vocab": "http://hl7.org/fhir/",
+    "@version": 1.1,
+    "domain": {
+      "@type": "@vocab"
+    },
+    "dpv": "http://www.w3.org/ns/dpv#",
+    "dpv-gdpr": "http://www.w3.org/ns/dpv-gdpr#",
+    "dpv-nace": "http://www.w3.org/ns/dpv-nace#"
+  },
+  "name": "Consent",
+  "type": "spec/schema_base/1.0",
+  "conformance-type": "CA-Core",
+  "conformance-spec": "http://hl7.org/fhir/ca/core/StructureDefinition/",
+  "description": "FHIR Consent resource json object transformed to jsonld Schema Base for OCA",
+  "classification": [
+    "UMLS:C0008960",
+    "GICS:351030"
+  ],
+  "issued_by": "FHIR OCA WG",
+  "purpose": {
+    "@id": "dpv:MedicalHealth",
+    "@type": "@id"
+  },
+  "attributes": {
+    "@id": "Consent",
+    "@type": "@id"
+  },
+  "pii_attributes": [
+    "Consent.status",
+    "Consent.scope",
+    "Consent.patient",
+    "Consent.policyRule",
+    "Consent.dateTime",
+    "Consent.category",
+    "Consent.sourceAttachment",
+    "Consent.provision",
+    "Consent.identifier",
+    "Consent.policy",
+    "Consent.sourceReference",
+    "Consent.organization",
+    "Consent.performer",
+    "Consent.verification",
+    "Consent.dateTime",
+    "Consent.performer",
+    "Consent.organization"
+  ]
+}
+

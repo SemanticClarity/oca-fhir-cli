@@ -1,0 +1,29 @@
+{
+  "resourceName": "Practitioner",
+  "attr_character_encoding": {
+    "Practitioner.communication": "utf-8",
+    "Practitioner._active": "utf-8",
+    "Practitioner.telecom": "utf-8",
+    "Practitioner.extension": "utf-8",
+    "Practitioner._gender": "utf-8",
+    "Practitioner.photo": "utf-8",
+    "Practitioner._birthDate": "utf-8",
+    "Practitioner.gender": "utf-8",
+    "Practitioner._language": "utf-8",
+    "Practitioner.name": "utf-8",
+    "Practitioner.address": "utf-8",
+    "Practitioner.birthDate": "utf-8",
+    "Practitioner.meta": "utf-8",
+    "Practitioner.contained": "utf-8",
+    "Practitioner.qualification": "utf-8",
+    "Practitioner.resourceType": "utf-8",
+    "Practitioner._implicitRules": "utf-8",
+    "Practitioner.identifier": "utf-8",
+    "Practitioner.modifierExtension": "utf-8",
+    "Practitioner.language": "utf-8",
+    "Practitioner.id": "utf-8",
+    "Practitioner.text": "utf-8",
+    "Practitioner.implicitRules": "utf-8",
+    "Practitioner.active": "utf-8"
+  }
+}

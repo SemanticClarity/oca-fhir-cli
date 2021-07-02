@@ -1,0 +1,10 @@
+{
+  "resourceName": "Immunization_Performer",
+  "attr_character_encoding": {
+    "Immunization_Performer.actor": "utf-8",
+    "Immunization_Performer.extension": "utf-8",
+    "Immunization_Performer.id": "utf-8",
+    "Immunization_Performer.modifierExtension": "utf-8",
+    "Immunization_Performer.function": "utf-8"
+  }
+}

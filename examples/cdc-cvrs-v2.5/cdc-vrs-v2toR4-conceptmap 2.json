@@ -1,0 +1,327 @@
+{
+    "resourceType": "ConceptMap",
+    "description" : "Map CDC Covid-19 VRS 2.5 v2 csv to FHIR R4 resources",
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "system": "urn:iso:std:iso:3166",
+                    "code": "US",
+                    "display": "United States of America"
+                }
+            ]
+        }
+    ],
+    "purpose": "Preview provided in anticipation of potential vaccine availability under Emergency Use Authorization (EUA)",
+    "sourceCanonical": "https://www.cdc.gov/vaccines/covid-19/reporting/downloads/CDC-COVID-19-Vaccination-Reporting-Specification_v2.5.xlsx",
+    "targetCanonical": "http://hl7.org/fhir/us/core",
+    "group": [
+        {
+            "element": [
+                {
+                    "code": "vax_event_id",
+                    "target": [
+                        {
+                            "code": "Immunization.identifier",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "ext_type",
+                    "target": [
+                        {
+                            "code": "Bundle.extension[ext_type]",
+                            "extension": [
+                                {
+                                    "_valueString": {}
+                                }
+                            ],
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "pprl_id",
+                    "target": [
+                        {
+                            "equivalence": "unmatched"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_first_name",
+                    "target": [
+                        {
+                            "code": "Patient.name.given",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_middle_name",
+                    "target": [
+                        {
+                            "code": "Patient.name.given",
+                            "equivalence": "wider"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_last_name",
+                    "target": [
+                        {
+                            "code": "Patient.name.family",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_dob",
+                    "target": [
+                        {
+                            "code": "Patient.birthDate",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_sex",
+                    "target": [
+                        {
+                            "code": "Patient.gender",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_address_street",
+                    "target": [
+                        {
+                            "code": "Patient.address.line",
+                            "equivalence": "wider"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_address_city",
+                    "target": [
+                        {
+                            "code": "Patient.address.city",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_address_county",
+                    "target": [
+                        {
+                            "code": "Patient.address.district",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_address_state",
+                    "target": [
+                        {
+                            "code": "Patient.address.state",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_address_zip",
+                    "target": [
+                        {
+                            "code": "Patient.address.postalCode",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_race_1",
+                    "target": [
+                        {
+                            "code": "Patient.extension:race",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_race_2",
+                    "target": [
+                        {
+                            "code": "Patient.extension:recip_race2",
+                            "equivalence": "equal"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_race_3",
+                    "target": [
+                        {
+                            "code": "Patient.extension:recip_race3",
+                            "equivalence": "equal"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_race_4",
+                    "target": [
+                        {
+                            "code": "Patient.extension:recip_race4",
+                            "equivalence": "equal"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_race_5",
+                    "target": [
+                        {
+                            "code": "Patient.extension:recip_race5",
+                            "equivalence": "equal"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_race_6",
+                    "target": [
+                        {
+                            "code": "Patient.extension:recip_race6",
+                            "equivalence": "equal"
+                        }
+                    ]
+                },
+                {
+                    "code": "recip_ethnicity",
+                    "target": [
+                        {
+                            "code": "Patient.extension:ethnicity",
+                            "equivalence": "equal"
+                        }
+                    ]
+                },
+                {
+                    "code": "admin_date",
+                    "target": [
+                        {
+                            "code": "Immunization.occurance[dateTime]",
+                            "equivalence": "equal"
+                        }
+                    ]
+                },
+                {
+                    "code": "cvx",
+                    "target": [
+                        {
+                            "code": "Immunization.vaccineCode",
+                            "equivalence": "equal"
+                        }
+                    ]
+                },
+                {
+                    "code": "ndc",
+                    "target": [
+                        {
+                            "equivalence": "unmatched"
+                        }
+                    ]
+                },
+                {
+                    "code": "mvx",
+                    "target": [
+                        {
+                            "code": "Immunization.manufacturer",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+
+                },
+                {
+                    "code": "lot_number",
+                    "target": [
+                        {
+                            "code": "Immunization.lotNumber",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "vax_expiration",
+                    "target": [
+                        {
+                            "code": "Immunization.expirationDate",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "vax_admin_site",
+                    "target": [
+                        {
+                            "code": "Immunization.site",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "vax_route",
+                    "target": [
+                        {
+                            "code": "Immunization.route",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "dose_num",
+                    "target": [
+                        {
+                            "code": "Immunization.protocolApplied.doseNumber[x]",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "vax_series_complete",
+                    "target": [
+                        {
+                            "code": "Immunization.status",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "responsible_org",
+                    "target": [
+                        {
+                            "code": "Immunization.extension:responsible_org",
+                            "equivalence": "inexact"
+                        }
+                    ]
+                },
+                {
+                    "code": "admin_name",
+                    "target": [
+                        {
+                            "code": "Immunization.performer.actor",
+                            "equivalence": "inexact"
+                        }
+                    ]
+                },
+                {
+                    "code": "vrtcks_prov_pin",
+                    "target": [
+                        {
+                            "code": "Immunization.extension:vTrcksProvPin",
+                            "equivalence": "specializes"
+                        }
+                    ]
+                }
+
+            ]
+        }
+    ]
+    
+}

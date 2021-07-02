@@ -1,0 +1,30 @@
+{
+  "resourceName": "Contract_ValuedItem",
+  "attr_character_encoding": {
+    "Contract_ValuedItem.modifierExtension": "utf-8",
+    "Contract_ValuedItem.responsible": "utf-8",
+    "Contract_ValuedItem.effectiveTime": "utf-8",
+    "Contract_ValuedItem.quantity": "utf-8",
+    "Contract_ValuedItem.securityLabelNumber": "utf-8",
+    "Contract_ValuedItem._factor": "utf-8",
+    "Contract_ValuedItem._payment": "utf-8",
+    "Contract_ValuedItem.payment": "utf-8",
+    "Contract_ValuedItem.identifier": "utf-8",
+    "Contract_ValuedItem._securityLabelNumber": "utf-8",
+    "Contract_ValuedItem.factor": "utf-8",
+    "Contract_ValuedItem.paymentDate": "utf-8",
+    "Contract_ValuedItem._points": "utf-8",
+    "Contract_ValuedItem.entityReference": "utf-8",
+    "Contract_ValuedItem.id": "utf-8",
+    "Contract_ValuedItem._paymentDate": "utf-8",
+    "Contract_ValuedItem._linkId": "utf-8",
+    "Contract_ValuedItem._effectiveTime": "utf-8",
+    "Contract_ValuedItem.net": "utf-8",
+    "Contract_ValuedItem.unitPrice": "utf-8",
+    "Contract_ValuedItem.entityCodeableConcept": "utf-8",
+    "Contract_ValuedItem.linkId": "utf-8",
+    "Contract_ValuedItem.points": "utf-8",
+    "Contract_ValuedItem.extension": "utf-8",
+    "Contract_ValuedItem.recipient": "utf-8"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://w3id.org/pathogen/v1",
+    "https://w3id.org/security/bbs/v1"
+  ],
+  "id": "http://example.org/credentials/",
+  "type": [
+    "VerifiableCredential"
+  ],
+  "issuanceDate": "2021-02-04T20:29:37+00:00",
+  "expirationDate": "2021-02-05T20:29:37+00:00",
+  "issuer": "did:example:123",
+  "credentialSubject": {
+    "@context": [
+      "https://w3id.org/pathogen/v1"
+    ],
+    "type": "GoodHealthPass",
+    "linkedCredential": "d6aa915a-2f90-45fd-afdc-c194b1ea6c5e",
+    "recipient": {
+      "@context": [
+        "https://w3id.org/pathogen/v1"
+      ],
+      "type": "GHPEventRecipient",
+      "familyName": "Orn",
+      "givenName": "Hyman",
+      "middleName": "c",
+      "birthDate": "1998-09-03T19:57:50.061Z"
+    },
+    "status": true
+  },
+  "evidence": []
+}

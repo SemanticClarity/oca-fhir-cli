@@ -1,0 +1,27 @@
+{
+  "resourceType": "Immunization",
+  "id": "CdcCvrsImmunizationExample1",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/CdcCvrsImmunization"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.cdc.gov/vaccines/programs/vtrcks/topics/functionality.html",
+      "value": "AAA111"
+    }
+  ],
+  "status": "YES",
+  "vaccineCode": {
+    "coding": [
+      {
+        "code": "901"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/CdcCvrsPatientExample1"
+  },
+  "occurrenceDateTime": "2021-01-01T01:01:01.111+06:00"
+}

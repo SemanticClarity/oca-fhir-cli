@@ -1,0 +1,13 @@
+{
+  "resourceName": "Immunization_Reaction",
+  "attr_character_encoding": {
+    "Immunization_Reaction.date": "utf-8",
+    "Immunization_Reaction._reported": "utf-8",
+    "Immunization_Reaction.extension": "utf-8",
+    "Immunization_Reaction._date": "utf-8",
+    "Immunization_Reaction.modifierExtension": "utf-8",
+    "Immunization_Reaction.detail": "utf-8",
+    "Immunization_Reaction.reported": "utf-8",
+    "Immunization_Reaction.id": "utf-8"
+  }
+}
