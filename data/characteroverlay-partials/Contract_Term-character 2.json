@@ -1,0 +1,23 @@
+{
+  "resourceName": "Contract_Term",
+  "attr_character_encoding": {
+    "Contract_Term.topicCodeableConcept": "utf-8",
+    "Contract_Term.offer": "utf-8",
+    "Contract_Term.id": "utf-8",
+    "Contract_Term.applies": "utf-8",
+    "Contract_Term.extension": "utf-8",
+    "Contract_Term.identifier": "utf-8",
+    "Contract_Term.securityLabel": "utf-8",
+    "Contract_Term.topicReference": "utf-8",
+    "Contract_Term.type": "utf-8",
+    "Contract_Term.asset": "utf-8",
+    "Contract_Term._issued": "utf-8",
+    "Contract_Term.group": "utf-8",
+    "Contract_Term._text": "utf-8",
+    "Contract_Term.modifierExtension": "utf-8",
+    "Contract_Term.action": "utf-8",
+    "Contract_Term.issued": "utf-8",
+    "Contract_Term.subType": "utf-8",
+    "Contract_Term.text": "utf-8"
+  }
+}

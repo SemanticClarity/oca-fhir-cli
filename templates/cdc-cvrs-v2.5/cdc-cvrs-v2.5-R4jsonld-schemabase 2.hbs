@@ -1,0 +1,45 @@
+{
+"@context": {
+"@version": 1.1,
+"dpv": "http://www.w3.org/ns/dpv#",
+"dpv-nace": "http://www.w3.org/ns/dpv-nace#"
+},
+"name": "{{@name}}",
+"type": "{{@oca-base-schema-type}}",
+"conformance-type": "{{@fhir-profile-ref}}",
+"conformance-spec": ["{{@fhir-profile-uri}}"],
+"attributes": 
+   {
+        "{{@root.resourceType}}" : "{{{getHashlinkForPrimitive @root.resourceType}}}",
+    {{#each entry}} 
+        {{#if @last}} 
+        "{{resourceType}}" : "{{{getHashlinkForPrimitive resource.resourceType}}}"
+        {{else}}
+        "{{resourceType}}" : "{{{getHashlinkForPrimitive resource.resourceType}}}",
+        {{/if}}
+    {{/each}}
+   },
+"description": "FHIR {{type}} resource json object transformed to jsonld {{@oca-artifact-type}} for OCA",
+"classification": ["{{@umls-cui}}", "GICS:351030"],
+"issued_by": "{{@author}}",
+"purpose": {
+  "@id": "{{@dpv-purpose}}",
+  "@type": "@id"
+},
+"conformance-payload": {{>cdc-cvrs-v2.5-R4jsonld-bundle-hbs}}
+{{~#if (hasBITdefined @root.resourceType)~}}
+ , 
+"attr_blinding": [{{{getBITProperties @root.resourceType}}}
+{{~/if~}}
+ ,
+    {{#each entry}} 
+        {{#if (hasBITdefined resourceType)}}
+            {{#if @first}} 
+                {{{getBITProperties resourceType}}}
+            {{else}}
+                ,{{{getBITProperties resourceType}}}
+            {{~/if~}}
+        {{~/if~}}
+    {{~/each~}}
+    ]
+}

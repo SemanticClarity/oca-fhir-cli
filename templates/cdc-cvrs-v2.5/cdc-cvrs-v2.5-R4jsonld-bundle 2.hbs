@@ -1,0 +1,533 @@
+{
+     "@context": [
+      "https://fhircat.org/fhir-r4/original/contexts/bundle.context.jsonld",
+      "https://fhircat.org/fhir-r4/original/contexts/immunization.context.jsonld",
+      "https://fhircat.org/fhir-r4/original/contexts/patient.context.jsonld",
+      "https://fhircat.org/fhir-r4/original/contexts/extension.context.jsonld",
+      "https://fhircat.org/fhir-r4/original/contexts/root.context.jsonld",
+      {
+        "@base": "http://hl7.org/fhir/",
+        "nodeRole": {
+          "@type": "@id",
+          "@id": "fhir:nodeRole"
+        },
+        "owl:imports": {
+          "@type": "@id"
+        },
+        "owl:versionIRI": {
+          "@type": "@id"
+        }
+      }
+      ],
+    "nodeRole": "fhir:treeRoot",
+    "@id": "Bundle/{{vax_event_id}}",
+    "@included": {
+      "@id": "Bundle/{{vax_event_id}}.ttl",
+      "owl:versionIRI": "Bundle/{{vax_event_id}}.ttl",
+      "owl:imports": "fhir:fhir.ttl",
+      "@type": "owl:Ontology"
+    },
+    "resourceType": "fhir:Bundle",
+    "id": {
+      "value": "CdcCvrsEuaBundleExample1"
+    },
+    "meta": {
+      "profile": [
+        {
+          "value": "http://example.org/StructureDefinition/CdcCvrsEuaBundle",
+          "index": 0
+        }
+      ],
+      "security": [
+        {
+          "code": {
+            "value": "HTEST"
+          },
+          "system": {
+            "value": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+          },
+          "index": 0
+        }
+      ]
+    },
+    "type": {
+      "value": "collection"
+    },
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "fhir:Patient",
+          "id": {
+            "value": "{{recip_id}}"
+          },
+          "meta": {
+            "profile": [
+              {
+                "value": "http://example.org/StructureDefinition/CdcCvrsPatient",
+                "index": 0
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": {
+                "value": "ext_type"
+              },
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": {
+                      "value": "{{ext_type}}"
+                    },
+                    "system": {
+                      "value": "http://example.org/CodeSystem/cdccvrs-dataextractype-codesystem"
+                    },
+                    "index": 0,
+                    "@type": "http://example.org/CodeSystem/cdccvrs-dataextractype-codesystem/DEIDENTIFIED"
+                  }
+                ]
+              },
+              "index": 0
+            },
+            {
+              "url": {
+                "value": "recip_ethnicity"
+              },
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": {
+                      "value": "{{recip_ethnicity}}"
+                    },
+                    "system": {
+                      "value": "https://hl7.org/fhir/us/core/CodeSystem-cdcrec.json"
+                    },
+                    "index": 0,
+                    "@type": "https://hl7.org/fhir/us/core/CodeSystem-cdcrec.json/2135-2"
+                  }
+                ]
+              },
+              "index": 1
+            },
+            {
+              "url": {
+                "value": "recip_race"
+              },
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": {
+                      "value": "{{recip_race_1}}"
+                    },
+                    "index": 0
+                  }
+                ]
+              },
+              "index": 2
+            },
+            {
+              "url": {
+                "value": "recip_race"
+              },
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": {
+                      "value": "{{recip_race_2}}"
+                    },
+                    "index": 0
+                  }
+                ]
+              },
+              "index": 3
+            },
+            {
+              "url": {
+                "value": "recip_race"
+              },
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": {
+                      "value": "{{recip_race_3}}"
+                    },
+                    "index": 0
+                  }
+                ]
+              },
+              "index": 4
+            },
+            {
+              "url": {
+                "value": "recip_race"
+              },
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": {
+                      "value": "{{recip_race_4}}"
+                    },
+                    "index": 0
+                  }
+                ]
+              },
+              "index": 5
+            },
+            {
+              "url": {
+                "value": "recip_race"
+              },
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": {
+                      "value": "{{recip_race_5}}"
+                    },
+                    "index": 0
+                  }
+                ]
+              },
+              "index": 6
+            },
+            {
+              "url": {
+                "value": "recip_race"
+              },
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": {
+                      "value": "{{recip_race_6}}"
+                    },
+                    "index": 0
+                  }
+                ]
+              },
+              "index": 7
+            }
+          ],
+          "identifier": [
+            {
+              "value": {
+                "value": "{{recip_id}}"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "code": {
+                      "value": "MR"
+                    },
+                    "system": {
+                      "value": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                    },
+                    "index": 0,
+                    "@type": "http://terminology.hl7.org/CodeSystem/v2-0203/MR"
+                  }
+                ]
+              },
+              "system": {
+                "value": "http://www.acme.com/identifiers/patient"
+              },
+              "index": 0
+            }
+          ],
+          "name": [
+            {
+              "family": {
+                "value": "{{recip_last_name}}"
+              },
+              "given": [
+                {
+                  "value": "{{recip_first_name}}",
+                  "index": 0
+                }
+              ],
+              "index": 0
+            },
+            {
+              "given": [
+                {
+                  "value": "Jane",
+                  "index": 0
+                }
+              ],
+              "index": 1
+            }
+          ],
+          "gender": {
+            "value": "{{recip_sex}}"
+          },
+          "birthDate": {
+            "value": "{{recip_dob}}"
+          },
+          "address": [
+            {
+              "line": [
+                {
+                  "value": "{{recip_address_street}}",
+                  "index": 0
+                },
+                {
+                  "value": "{{recip_address_street_2}}",
+                  "index": 1
+                }
+              ],
+              "city": {
+                "value": "{{recip_address_city}}"
+              },
+              "district": {
+                "value": "{{recip_address_county}}"
+              },
+              "state": {
+                "value": "{{recip_address_state}}"
+              },
+              "postalCode": {
+                "value": "{{recip_address_zip}}"
+              },
+              "index": 0
+            }
+          ],
+          "@id": "#{{recip_id}}"
+        },
+        "index": 0
+      },
+      {
+        "resource": {
+          "resourceType": "fhir:Immunization",
+          "id": {
+            "value": "CdcCvrsImmunizationExample-{{vax_event_id}}"
+          },
+          "meta": {
+            "profile": [
+              {
+                "value": "http://example.org/StructureDefinition/CdcCvrsImmunization",
+                "index": 0
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": {
+                "value": "ext_type"
+              },
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": {
+                      "value": "{{ext_type}}"
+                    },
+                    "system": {
+                      "value": "http://example.org/CodeSystem/cdccvrs-dataextractype-codesystem"
+                    },
+                    "index": 0,
+                    "@type": "http://example.org/CodeSystem/cdccvrs-dataextractype-codesystem/DEIDENTIFIED"
+                  }
+                ]
+              },
+              "index": 0
+            },
+            {
+              "url": {
+                "value": "vTrcksPIN"
+              },
+              "valueString": {
+                "value": "{{vtrcks_prov_pin}}"
+              },
+              "index": 1
+            },
+            {
+              "url": {
+                "value": "admin_type"
+              },
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": {
+                      "value": "admin_type"
+                    },
+                    "system": {
+                      "value": "http://example.org/CodeSystem/cdc-admintype-codeset"
+                    },
+                    "index": 0,
+                    "@type": "http://example.org/CodeSystem/cdc-admintype-codeset/17"
+                  }
+                ]
+              },
+              "index": 2
+            },
+            {
+              "url": {
+                "value": "cmorbid_status"
+              },
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": {
+                      "value": "{{cmorbid_status}}"
+                    },
+                    "system": {
+                      "value": "http://terminology.hl7.org/ValueSet/v2-0136"
+                    },
+                    "index": 0,
+                    "@type": "http://terminology.hl7.org/ValueSet/v2-0136/N"
+                  }
+                ]
+              },
+              "index": 3
+            },
+            {
+              "url": {
+                "value": "vax_refusal"
+              },
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": {
+                      "value": "{{vax_refusal}}"
+                    },
+                    "system": {
+                      "value": "http://terminology.hl7.org/ValueSet/v2-0136"
+                    },
+                    "index": 0,
+                    "@type": "http://terminology.hl7.org/ValueSet/v2-0136/N"
+                  }
+                ]
+              },
+              "index": 4
+            },
+            {
+              "url": {
+                "value": "serology"
+              },
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": {
+                      "value": "{{serology}}"
+                    },
+                    "system": {
+                      "value": "http://terminology.hl7.org/ValueSet/v2-0136"
+                    },
+                    "index": 0,
+                    "@type": "http://terminology.hl7.org/ValueSet/v2-0136/UNK"
+                  }
+                ]
+              },
+              "index": 5
+            }
+          ],
+          "identifier": [
+            {
+              "value": {
+                "value": "{{vax_event_id}}"
+              },
+              "system": {
+                "value": "http://terminology.hl7.org/CodeSystem/v2-0203#MR"
+              },
+              "index": 0
+            }
+          ],
+          "status": {
+            "value": "{{vax_series_complete}}"
+          },
+          "vaccineCode": {
+            "coding": [
+              {
+                "code": {
+                  "value": "{{cvx}}"
+                },
+                "system": {
+                  "value": "http://example.org/CodeSystem/cdc-vaccine-eua-codeset"
+                },
+                "index": 0,
+                "@type": "http://example.org/CodeSystem/cdc-vaccine-eua-codeset/207"
+              }
+            ]
+          },
+          "patient": {
+            "reference": {
+              "value": "Patient/CdcCvrsPatientExample-{{recip_id}}"
+            },
+            "fhir:link": {
+              "@id": "../Patient/CdcCvrsPatientExample1-{{recip_id}}",
+              "@type": "fhir:Patient"
+            }
+          },
+          "occurrenceDateTime": {
+            "value": "{{admin_date}}"
+          },
+          "protocolApplied": [
+            {
+              "doseNumberPositiveInt": {
+                "value": {{dose_num}}
+              },
+              "seriesDosesPositiveInt": {
+                "value": 2
+              },
+              "index": 0
+            }
+          ],
+          "lotNumber": {
+            "value": "{{lot_number}}"
+          },
+          "expirationDate": {
+            "value": "{{vax_expiration}}"
+          },
+          "site": {
+            "coding": [
+              {
+                "code": {
+                  "value": "{{vax_admin_site}}"
+                },
+                "system": {
+                  "value": "http://terminology.hl7.org/ValueSet/v2-0163"
+                },
+                "index": 0,
+                "@type": "http://terminology.hl7.org/ValueSet/v2-0163/LA"
+              }
+            ]
+          },
+          "route": {
+            "coding": [
+              {
+                "code": {
+                  "value": "{{vax_route}}"
+                },
+                "system": {
+                  "value": "http://terminology.hl7.org/ValueSet/v2-0162"
+                },
+                "index": 0,
+                "@type": "http://terminology.hl7.org/ValueSet/v2-0162/C38238"
+              }
+            ]
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": {
+                  "value": "Organization/org-hopeclinic"
+                },
+                "fhir:link": {
+                  "@id": "../Organization/org-hopeclinic",
+                  "@type": "fhir:Organization"
+                }
+              },
+              "index": 0
+            }
+          ],
+          "statusReason": {
+            "coding": [
+              {
+                "code": {
+                  "value": "MEDPREC"
+                },
+                "index": 0
+              }
+            ]
+          },
+          "@id": "#CdcCvrsImmunizationExample1-{{vax_event_id}}"
+        },
+        "index": 1
+      }
+    ]
+}

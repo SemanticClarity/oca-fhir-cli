@@ -1,0 +1,22 @@
+GHP IG Guide Questions
+-----------------------
+1. what is our starting point:
+	a. For the US - what is the FHIR starting point?
+	   Our attestation source is a FHIR source
+	b. For EU - DGC - is the starting point a set of DGC credential , that must me confirmed and transformed into GHP.
+	   Our attestation source is an existing VC generated source 
+	c. How do we position GHP --
+
+	The recommendations in this section do not appear to include standard GHP credential and pass elements (claims) required by recommendations from other drafting groups, specifically: 1) the DID of the governance framework under which a GHP-compliant health credential or pass was issued (for discovering the trust registry), and 2) the identity binding LOA. (These could be included in a GHP Credentials Technical Spec.)
+
+
+
+	JW CCI Bio
+	1. Volunteered into CCI at the onset
+	2. Supporting the Communications and Operations and Use Case workstreams
+	3. Background in Technology Dev and Management
+	4. Large data initiatives Personal, Product and Analytics
+	5. 4 years investigating distibuted PHI using Block chain
+	6. Most recently initiating work at ToIP Input and Semantics
+	     - conversion of FHIR based data 
+	     

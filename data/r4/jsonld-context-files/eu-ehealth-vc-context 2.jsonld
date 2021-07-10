@@ -1,0 +1,161 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "description": "http://schema.org/description",
+        "identifier": "http://schema.org/identifier",
+        "fhir": "http://hl7.org/fhir/",
+        
+
+        "VaccinationCertificate": {
+            "@id": "https://w3id.org/vaccination#VaccinationCertificate",
+
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+
+                "id": "@id",
+                "type": "@type",
+
+                "description": "http://schema.org/description",
+                "identifier": "http://schema.org/identifier",
+                "name": "http://schema.org/name"
+            }
+        },
+
+        "VaccinationEvent": {
+            "@id": "https://w3id.org/vaccination#VaccinationEvent",
+            "@type": "fhir:Immunization",
+
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+
+                "id": "@id",
+                "type": "@type",
+
+                "administeringCentre": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/location.context.jsonld",
+                    "@id": "fhir:Immunization.location",
+                    "@type": "@id"
+                },
+                "batchNumber": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/string.context.jsonld",
+                    "@id":"fhir:Immunization.lotNumber",
+                    "@type": "@id"
+                },
+                "countryOfVaccination": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/valueset.context.jsonld",
+                    "@id":"http://hl7.org/fhir/ValueSet/iso3166-1-2",
+                    "@type": "@id"
+                },
+                "dateOfVaccination": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/datetime.context.jsonld",
+                    "@id":"fhir:Immunization.occurenceDateTime", 
+                    "@type": "@id"
+                },
+                "healthProfessional": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/immunization.performer.context.jsonld",
+                    "@id": "fhir:Immunization.performer.actor",
+                    "@type": "@id"
+                },
+                "nextVaccinationDate": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/immunizationrecommendation.recommendation.datecriterion.context.jsonld", 
+                    "@id": "fhir:ImmunizationRecommendation.dateCriterion.value",
+                    "@type": "@id"
+                },
+                "order": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/immunization.protocolapplied.context.jsonld",
+                    "@id": "fhir:Immunization.protocolApplied.doseNumber",
+                    "@type": "@id"
+                },
+                "recipient": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/patient.context.jsonld",
+                    "@id": "fhir:Patient",
+                    "@type": "@id"
+                },
+                "vaccine": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/valueset.context.jsonld",
+                    "@id": "http://hl7.org/fhir/ValueSet/vaccine-code",
+                    "@type": "@id"
+                }
+            }
+        },
+
+        "VaccineRecipient": {
+            "@id": "https://w3id.org/vaccination#VaccineRecipient",
+            "@type": "fhir:Patient",
+
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+
+                "id": "@id",
+                "type": "@type",
+
+                "birthDate": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/patient-birthtime.context.jsonld",
+                    "@id": "fhir:Patient.birthDate", 
+                    "@type": "@id"
+                },
+                "familyName": { 
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/humanname.context.jsonld",
+                    "@id": "fhir:Patient.name.familyName",
+                    "@type": "@id"
+                },
+                "gender": { 
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/patient-genderidentity.context.jsonld",
+                    "@id": "fhir:Patient.name.gender",
+                    "@type": "@id"
+                },
+                "givenName": { 
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/humanname.context.jsonld",
+                    "@id": "fhir:Patient.name.givenName",
+                    "@type": "@id"
+                }
+            }
+        },
+
+        "Vaccine": {
+            "@id": "https://w3id.org/vaccination#Vaccine",
+            "@type": "fhir:Immunization",
+
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+
+                "id": "@id",
+                "type": "@type",
+
+                "atcCode": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/valueset.context.jsonld",
+                    "@id": "http://hl7.org/fhir/ValueSet/vaccine-code",
+                    "@type": "@id"
+                },
+                "disease": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/immunization.protocolapplied.context.jsonld",
+                    "@type": "@id",
+                    "@id": "fhir:Immunization.protocolApplied.targetedDisease"
+                },
+                "event": {
+                    "@id": "https://w3id.org/vaccination#VaccineRecipientVaccineEvent",
+                    "@type": "https://w3id.org/vaccination#VaccineEvent"
+                },
+                "marketingAuthorizationHolder": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/valueset.context.jsonld",
+                    "@id": "https://w3id.org/vaccination#marketingAuthorizationHolder",
+                    "@type": "@id"
+                },
+                "medicinalProductName": {
+                    "@context": "https://fhircat.org/fhir-r4/original/contexts/valueset.context.jsonld",
+                    "@id": "fhir:",
+                    "@type": "@id"
+                } 
+            }
+        }
+    }
+}

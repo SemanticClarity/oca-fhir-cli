@@ -1,0 +1,10 @@
+{
+  "resourceName": "Immunization",
+  "attr_entries": {
+    "Immunization.status": [
+      "completed ",
+      " entered-in-error ",
+      " not-done"
+    ]
+  }
+}

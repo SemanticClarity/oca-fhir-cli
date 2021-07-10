@@ -1,0 +1,70 @@
+{
+  "@context": {
+    "@vocab": "http://hl7.org/fhir/",
+    "@version": 1.1,
+    "domain": {
+      "@type": "@vocab"
+    },
+    "dpv": "http://www.w3.org/ns/dpv#",
+    "dpv-gdpr": "http://www.w3.org/ns/dpv-gdpr#",
+    "dpv-nace": "http://www.w3.org/ns/dpv-nace#"
+  },
+  "name": "Contract",
+  "type": "spec/schema_base/1.0",
+  "conformance-type": "CA-Core",
+  "conformance-spec": "http://hl7.org/fhir/ca/core/StructureDefinition/",
+  "description": "FHIR Contract resource json object transformed to jsonld Schema Base for OCA",
+  "classification": [
+    "UMLS:C0008960",
+    "GICS:351030"
+  ],
+  "issued_by": "FHIR OCA WG",
+  "purpose": {
+    "@id": "dpv:MedicalHealth",
+    "@type": "@id"
+  },
+  "attributes": {
+    "@id": "Contract",
+    "@type": "@id"
+  },
+  "pii_attributes": [
+    "Contract.term.asset.valuedItem.net",
+    "Contract.friendly",
+    "Contract.term.asset.valuedItem.points",
+    "Contract.term.type",
+    "Contract.rule",
+    "Contract.term.group.asset.valuedItem.effectiveTime",
+    "Contract.term.applies",
+    "Contract.term.offer.type",
+    "Contract.term.group.subType",
+    "Contract.term.group.asset.valuedItem.points",
+    "Contract.term.subType",
+    "Contract.legal",
+    "Contract.contentDerivative",
+    "Contract.term.asset.valuedItem.unitPrice",
+    "Contract.subType",
+    "Contract.signer.party",
+    "Contract.type",
+    "Contract.term.group.asset.valuedItem.unitPrice",
+    "Contract.term.asset.valuedItem.effectiveTime",
+    "Contract.term.group.asset.valuedItem.factor",
+    "Contract.term.group.type",
+    "Contract.signer.type",
+    "Contract.term.group.applies",
+    "Contract.term.group.group",
+    "Contract.term.group.offer.type",
+    "Contract.term.action.intent",
+    "Contract.term.group.asset.valuedItem.quantity",
+    "Contract.term.asset.valuedItem.factor",
+    "Contract.term.group.issued",
+    "Contract.term.issued",
+    "Contract.term.group.offer.decision",
+    "Contract.term.asset.valuedItem.quantity",
+    "Contract.term.group",
+    "Contract.signer.signature",
+    "Contract.term.offer.decision",
+    "Contract.term.group.action.intent",
+    "Contract.term.group.asset.valuedItem.net",
+    "Contract.term"
+  ]
+}

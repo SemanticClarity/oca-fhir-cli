@@ -1,0 +1,9 @@
+{
+  "resourceName": "ImmunizationEvaluation",
+  "attr_entries": {
+    "ImmunizationEvaluation.status": [
+      "completed ",
+      " entered-in-error"
+    ]
+  }
+}

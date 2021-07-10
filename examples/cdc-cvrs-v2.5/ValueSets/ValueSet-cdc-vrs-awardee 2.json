@@ -1,0 +1,271 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AwaredeeValueSet",
+  "id": "cdc-vrs-awardee",
+  "title": "CDC VRS v2.5 Awardee Value Set",
+  "description": "ValueSet to be used for Submitting Entity Codes (Awardee)",
+  "version": "0.1.0",
+  "url": "http://example.org/ValueSet/cdc-vrs-awardee",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/CodeSystem/cdc-assigning-authority",
+        "concept": [
+          {
+            "code": "ALA",
+            "display": "Alabama"
+          },
+          {
+            "code": "AKA",
+            "display": "Alaska"
+          },
+          {
+            "code": "ASA",
+            "display": "American Samoa"
+          },
+          {
+            "code": "AZA",
+            "display": "Arizona"
+          },
+          {
+            "code": "ARA",
+            "display": "Arkansas"
+          },
+          {
+            "code": "CAA",
+            "display": "California"
+          },
+          {
+            "code": "CHA",
+            "display": "Chicago"
+          },
+          {
+            "code": "COA",
+            "display": "Colorado"
+          },
+          {
+            "code": "CTA",
+            "display": "Connecticut"
+          },
+          {
+            "code": "DEA",
+            "display": "Delaware"
+          },
+          {
+            "code": "DCA",
+            "display": "District of Columbia"
+          },
+          {
+            "code": "FMA",
+            "display": "Federated States of Micronesia"
+          },
+          {
+            "code": "FLA",
+            "display": "Florida"
+          },
+          {
+            "code": "GAA",
+            "display": "Georgia"
+          },
+          {
+            "code": "GUA",
+            "display": "Guam"
+          },
+          {
+            "code": "HIA",
+            "display": "Hawaii"
+          },
+          {
+            "code": "THA",
+            "display": "Houston"
+          },
+          {
+            "code": "IDA",
+            "display": "Idaho"
+          },
+          {
+            "code": "ILA",
+            "display": "Illinois"
+          },
+          {
+            "code": "INA",
+            "display": "Indiana"
+          },
+          {
+            "code": "IAA",
+            "display": "Iowa"
+          },
+          {
+            "code": "KSA",
+            "display": "Kansas"
+          },
+          {
+            "code": "KYA",
+            "display": "Kentucky"
+          },
+          {
+            "code": "LAA",
+            "display": "Louisiana"
+          },
+          {
+            "code": "MEA",
+            "display": "Maine"
+          },
+          {
+            "code": "MHA",
+            "display": "Marshall Islands"
+          },
+          {
+            "code": "MDA",
+            "display": "Maryland"
+          },
+          {
+            "code": "MAA",
+            "display": "Massachusetts"
+          },
+          {
+            "code": "MIA",
+            "display": "Michigan"
+          },
+          {
+            "code": "MNA",
+            "display": "Minnesota"
+          },
+          {
+            "code": "MSA",
+            "display": "Mississippi"
+          },
+          {
+            "code": "MOA",
+            "display": "Missouri"
+          },
+          {
+            "code": "MTA",
+            "display": "Montana"
+          },
+          {
+            "code": "NEA",
+            "display": "Nebraska"
+          },
+          {
+            "code": "NVA",
+            "display": "Nevada"
+          },
+          {
+            "code": "NHA",
+            "display": "New Hampshire"
+          },
+          {
+            "code": "NJA",
+            "display": "New Jersey"
+          },
+          {
+            "code": "NMA",
+            "display": "New Mexico"
+          },
+          {
+            "code": "BAA",
+            "display": "New York City"
+          },
+          {
+            "code": "NYA",
+            "display": "New York State"
+          },
+          {
+            "code": "NCA",
+            "display": "North Carolina"
+          },
+          {
+            "code": "NDA",
+            "display": "North Dakota"
+          },
+          {
+            "code": "MPA",
+            "display": "Northern Mariana Islands"
+          },
+          {
+            "code": "OHA",
+            "display": "Ohio"
+          },
+          {
+            "code": "OKA",
+            "display": "Oklahoma"
+          },
+          {
+            "code": "ORA",
+            "display": "Oregon"
+          },
+          {
+            "code": "PAA",
+            "display": "Pennsylvania"
+          },
+          {
+            "code": "PHA",
+            "display": "Philadelphia"
+          },
+          {
+            "code": "PRA",
+            "display": "Puerto Rico"
+          },
+          {
+            "code": "RPA",
+            "display": "Republic of Palau"
+          },
+          {
+            "code": "RIA",
+            "display": "Rhode Island"
+          },
+          {
+            "code": "TBA",
+            "display": "San Antonio"
+          },
+          {
+            "code": "SCA",
+            "display": "South Carolina"
+          },
+          {
+            "code": "SDA",
+            "display": "South Dakota"
+          },
+          {
+            "code": "TNA",
+            "display": "Tennessee"
+          },
+          {
+            "code": "TXA",
+            "display": "Texas"
+          },
+          {
+            "code": "UTA",
+            "display": "Utah"
+          },
+          {
+            "code": "VTA",
+            "display": "Vermont"
+          },
+          {
+            "code": "VIA",
+            "display": "Virgin Islands"
+          },
+          {
+            "code": "VAA",
+            "display": "Virginia"
+          },
+          {
+            "code": "WVA",
+            "display": "West Virginia"
+          },
+          {
+            "code": "WIA",
+            "display": "Wisconsin"
+          },
+          {
+            "code": "WYA",
+            "display": "Wyoming"
+          }
+        ]
+      }
+    ]
+  }
+}

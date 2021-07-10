@@ -1,0 +1,16 @@
+{
+  "resourceName": "Patient_Contact",
+  "attr_character_encoding": {
+    "Patient_Contact.address": "utf-8",
+    "Patient_Contact._gender": "utf-8",
+    "Patient_Contact.modifierExtension": "utf-8",
+    "Patient_Contact.organization": "utf-8",
+    "Patient_Contact.extension": "utf-8",
+    "Patient_Contact.period": "utf-8",
+    "Patient_Contact.gender": "utf-8",
+    "Patient_Contact.telecom": "utf-8",
+    "Patient_Contact.relationship": "utf-8",
+    "Patient_Contact.id": "utf-8",
+    "Patient_Contact.name": "utf-8"
+  }
+}

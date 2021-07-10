@@ -1,0 +1,10 @@
+{
+  "resourceName": "Contract_Legal",
+  "attr_character_encoding": {
+    "Contract_Legal.id": "utf-8",
+    "Contract_Legal.modifierExtension": "utf-8",
+    "Contract_Legal.contentAttachment": "utf-8",
+    "Contract_Legal.extension": "utf-8",
+    "Contract_Legal.contentReference": "utf-8"
+  }
+}

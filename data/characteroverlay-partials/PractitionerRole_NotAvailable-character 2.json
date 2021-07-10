@@ -1,0 +1,11 @@
+{
+  "resourceName": "PractitionerRole_NotAvailable",
+  "attr_character_encoding": {
+    "PractitionerRole_NotAvailable.extension": "utf-8",
+    "PractitionerRole_NotAvailable.during": "utf-8",
+    "PractitionerRole_NotAvailable._description": "utf-8",
+    "PractitionerRole_NotAvailable.modifierExtension": "utf-8",
+    "PractitionerRole_NotAvailable.id": "utf-8",
+    "PractitionerRole_NotAvailable.description": "utf-8"
+  }
+}

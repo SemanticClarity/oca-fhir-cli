@@ -1,0 +1,31 @@
+{
+"@context": {
+"@vocab" : "http://hl7.org/fhir/",
+"@version": 1.1,
+"domain": {"@type": "@vocab"},
+"dpv": "http://www.w3.org/ns/dpv#",
+"dpv-gdpr": "http://www.w3.org/ns/dpv-gdpr#",
+"dpv-nace": "http://www.w3.org/ns/dpv-nace#"
+},
+"name": "cvc-patientbundle-example",
+"type": "spec/schema_base/1.0",
+"conformance-type": "ca-baseline",
+"conformance-spec": ["http://hl7.org/fhir/ca/baseline/StructureDefinition/profile-immunization"],
+"attributes": 
+   {
+        "fhir:Bundle" : "hl:zQmNkzJuRdavCvPX8Uag93EyqYQMXR8zaVzQt8HVxbdHTm6",
+        "fhir:Patient" : "hl:zQmTQtUcMv8sgqk4SpQoo2TJQxKVW13EJnph6A76Sbj8yAM",
+        "fhir:Immunization" : "hl:zQmXnNzNSzfNFycXFFrFszhLkQ3xkHbziQYzrYxuJRpbnsH"
+   },
+"description": "FHIR collection resource json object transformed to jsonld  for OCA",
+"classification": ["UMLS:C0008960", "GICS:351030"],
+"issued_by": "fhir-oca-cli",
+"purpose": {
+  "@id": "dpv:MedicalHealth",
+  "@type": "@id"
+},
+"conformance-payload": {"@context":["https://fhircat.org/fhir-r5/original/contexts/bundle.context.jsonld","https://fhircat.org/fhir-r5/original/contexts/immunization.context.jsonld","https://fhircat.org/fhir-r5/original/contexts/patient.context.jsonld","https://fhircat.org/fhir-r5/original/contexts/root.context.jsonld",{"@base":"http://hl7.org/fhir/","nodeRole":{"@type":"@id","@id":"fhir:nodeRole"},"owl:imports":{"@type":"@id"},"owl:versionIRI":{"@type":"@id"}}],"resourceType":"fhir:Bundle","id":"CdcCvrsBundleExample1","meta":{"profile":["http://example.org/StructureDefinition/CdcCvrsEuaBundle"],"security":[{"code":"HTEST","system":"http://terminology.hl7.org/CodeSystem/v3-ActReason","index":0}]},"type":"collection","entry":[{"resource":{"resourceType":"fhir:Patient","id":"CdcCvrsPatientExample1","meta":{"profile":["http://example.org/StructureDefinition/CdcCvrsPatient"]},"extension":[{"url":"http://example.org/StructureDefinition/cdccvrs-extract-type","index":0},{"url":"http://example.org/StructureDefinition/cdc-race-ethnicity-ext","valueCodeableConcept":{"coding":[{"code":"UNK","index":0}]},"index":1},{"url":"http://example.org/StructureDefinition/cdc-race-ethnicity-ext","valueCodeableConcept":{"coding":[{"code":"UNK","index":0}]},"index":2},{"url":"http://example.org/StructureDefinition/cdc-race-ethnicity-ext","valueCodeableConcept":{"coding":[{"code":"UNK","index":0}]},"index":3},{"url":"http://example.org/StructureDefinition/cdc-race-ethnicity-ext","valueCodeableConcept":{"coding":[{"code":"UNK","index":0}]},"index":4},{"url":"http://example.org/StructureDefinition/cdc-race-ethnicity-ext","valueCodeableConcept":{"coding":[{"code":"UNK","index":0}]},"index":5},{"url":"http://example.org/StructureDefinition/cdc-race-ethnicity-ext","valueCodeableConcept":{"coding":[{"code":"UNK","index":0}]},"index":6},{"url":"http://example.org/StructureDefinition/cdccvrs-extract-type","valueCodeableConcept":{"coding":[{"code":"D","index":0}]},"index":7}],"identifier":[{"value":"5678","type":{"coding":[{"code":"MR","system":"http://terminology.hl7.org/CodeSystem/v2-0203","index":0,"@type":"http://terminology.hl7.org/CodeSystem/v2-0203/MR"}]},"system":"http://www.acme.com/identifiers/patient","index":0}],"name":[{"family":"Rubbles","index":0}],"gender":"F","deceasedBoolean":false,"birthDate":"1960-05-31","@id":"#CdcCvrsPatientExample1"},"index":0},{"resource":{"resourceType":"fhir:Immunization","id":"CdcCvrsImmunizationExample1","meta":{"profile":["http://example.org/StructureDefinition/CdcCvrsImmunization"]},"identifier":[{"system":"https://www.cdc.gov/vaccines/programs/vtrcks/topics/functionality.html","value":"AAA111","index":0}],"status":"YES","vaccineCode":{"coding":[{"code":"207","index":0}]},"patient":{"reference":"Patient/CdcCvrsPatientExample1","fhir:link":{"@id":"../Patient/CdcCvrsPatientExample1","@type":"fhir:Patient"}},"occurrenceDateTime":"2020-12-19","@id":"#CdcCvrsImmunizationExample1"},"index":1}],"nodeRole":"fhir:treeRoot","@id":"Bundle/CdcCvrsBundleExample1","@included":{"@id":"Bundle/CdcCvrsBundleExample1.ttl","owl:versionIRI":"Bundle/CdcCvrsBundleExample1.ttl","owl:imports":"fhir:fhir.ttl","@type":"owl:Ontology"}},
+"attr_blinding": [
+    "Bundle.timestamp"
+                ,"Patient.photo","Patient.deceasedDateTime","Patient.generalPractitioner","Patient.link","Patient.telecom","Patient.birthDate","Patient.maritalStatus","Patient.contact","Patient.multipleBirthInteger","Patient.communication","Patient.multipleBirthBoolean","Patient.gender","Patient.managingOrganization","Patient.identifier","Patient.name","Patient.deceasedBoolean","Patient.address","Patient.active"
+                ,"Immunization.reportOrigin","Immunization.vaccineCode","Immunization.location","Immunization.performer.actor","Immunization.primarySource","Immunization.encounter","Immunization.recorded"]}

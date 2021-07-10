@@ -1,0 +1,11 @@
+{
+  "resourceName": "Consent_Data",
+  "attr_character_encoding": {
+    "Consent_Data.id": "utf-8",
+    "Consent_Data.meaning": "utf-8",
+    "Consent_Data.reference": "utf-8",
+    "Consent_Data.modifierExtension": "utf-8",
+    "Consent_Data._meaning": "utf-8",
+    "Consent_Data.extension": "utf-8"
+  }
+}

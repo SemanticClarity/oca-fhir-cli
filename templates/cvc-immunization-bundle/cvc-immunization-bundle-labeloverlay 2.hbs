@@ -1,0 +1,37 @@
+{
+"@context": {
+"@vocab" : "http://hl7.org/fhir/",
+"@version": 1.1,
+"domain": {"@type": "@vocab"}
+},
+"name": "{{@root.resourceType}}",
+"ocatype": "{{@oca-artifact-type}}",
+"role": "{{role}}",
+"conformance-type": "{{@fhir-profile-ref}}",
+"conformance-spec": ["{{@fhir-profile-uri}}"],
+"description": "FHIR {{type}} resource json object transformed to OCA Format Overlay",
+"classification": ["{{@umls-cui}}", "GICS:351030"],
+"issued_by": "{{@author}}",
+"schema_base": "{{@schemabase-hashlink}}",
+"purpose": {
+  "@id": "{{@dpv-purpose}}",
+  "@type": "@id"
+ }
+ {{#if (hasLabelOverlay resourceType)}}
+, 
+"attr_labels": {{getLabelOverlay resourceType}}
+ {{/if}},
+ "attr_labels_ref": 
+    [
+    {{#each entry}} 
+        {{#if (hasLabelOverlay resourceType)}}
+            {{#if @first}} 
+                {{getLabelOverlay resourceType}}
+            {{~else~}}
+                ,{{getLabelOverlay resourceType}}
+            {{~/if~}}
+        {{~/if~}}
+    {{~/each~}}
+    ]
+
+}

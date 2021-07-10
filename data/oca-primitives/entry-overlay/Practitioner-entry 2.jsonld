@@ -1,0 +1,28 @@
+{
+"@context": {
+"@vocab" : "http://hl7.org/fhir/",
+"@version": 1.1,
+"domain": {"@type": "@vocab"}
+},
+"name": "Practitioner",
+"ocatype": "spec/overlay/entry/1.0",
+"conformance-type": "CA-Core",
+"conformance-spec": "http://hl7.org/fhir/ca/core/StructureDefinition/",
+"description": "FHIR Practitioner resource json object transformed to OCA Format Overlay",
+"classification": ["UMLS:C0008960", "GICS:351030"],
+"issued_by": "FHIR OCA WG",
+"schema_base": "hl:zQmU5ia5ZejsjRTqNcpEy4PqjhR21LbgT2PesoMN4BA1LC4",
+"purpose": {
+  "@id": "dpv:MedicalHealth",
+  "@type": "@id"
+ }
+, 
+"attr_entries": {
+  "Practitioner.gender": [
+    "male ",
+    " female ",
+    " other ",
+    " unknown"
+  ]
+}
+}

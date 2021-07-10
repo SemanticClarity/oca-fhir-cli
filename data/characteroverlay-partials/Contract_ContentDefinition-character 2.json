@@ -1,0 +1,17 @@
+{
+  "resourceName": "Contract_ContentDefinition",
+  "attr_character_encoding": {
+    "Contract_ContentDefinition._publicationStatus": "utf-8",
+    "Contract_ContentDefinition.id": "utf-8",
+    "Contract_ContentDefinition.modifierExtension": "utf-8",
+    "Contract_ContentDefinition.type": "utf-8",
+    "Contract_ContentDefinition._publicationDate": "utf-8",
+    "Contract_ContentDefinition.publicationStatus": "utf-8",
+    "Contract_ContentDefinition.publicationDate": "utf-8",
+    "Contract_ContentDefinition._copyright": "utf-8",
+    "Contract_ContentDefinition.subType": "utf-8",
+    "Contract_ContentDefinition.publisher": "utf-8",
+    "Contract_ContentDefinition.extension": "utf-8",
+    "Contract_ContentDefinition.copyright": "utf-8"
+  }
+}

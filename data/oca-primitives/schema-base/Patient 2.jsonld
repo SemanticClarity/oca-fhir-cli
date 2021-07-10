@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "@vocab": "http://hl7.org/fhir/",
+    "@version": 1.1,
+    "domain": {
+      "@type": "@vocab"
+    },
+    "dpv": "http://www.w3.org/ns/dpv#",
+    "dpv-gdpr": "http://www.w3.org/ns/dpv-gdpr#",
+    "dpv-nace": "http://www.w3.org/ns/dpv-nace#"
+  },
+  "name": "Patient",
+  "type": "spec/schema_base/1.0",
+  "conformance-type": "CA-Core",
+  "conformance-spec": "http://hl7.org/fhir/ca/core/StructureDefinition/",
+  "description": "FHIR Patient resource json object transformed to jsonld Schema Base for OCA",
+  "classification": [
+    "UMLS:C0008960",
+    "GICS:351030"
+  ],
+  "issued_by": "FHIR OCA WG",
+  "purpose": {
+    "@id": "dpv:MedicalHealth",
+    "@type": "@id"
+  },
+  "attributes": {
+    "@id": "Patient",
+    "@type": "@id"
+  },
+  "pii_attributes": [
+    "Patient.photo",
+    "Patient.deceasedDateTime",
+    "Patient.generalPractitioner",
+    "Patient.link",
+    "Patient.telecom",
+    "Patient.birthDate",
+    "Patient.maritalStatus",
+    "Patient.contact",
+    "Patient.multipleBirthInteger",
+    "Patient.communication",
+    "Patient.multipleBirthBoolean",
+    "Patient.gender",
+    "Patient.managingOrganization",
+    "Patient.identifier",
+    "Patient.name",
+    "Patient.deceasedBoolean",
+    "Patient.address",
+    "Patient.active"
+  ]
+}
+
