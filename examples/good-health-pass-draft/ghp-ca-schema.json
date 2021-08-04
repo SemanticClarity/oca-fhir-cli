@@ -1,0 +1,264 @@
+{
+   "$id": "https://w3id.org/ghp/ca",
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "definitions": {
+      "GHPAntigenTestCredential": {
+         "additionalProperties": false,
+         "description": "GHP Proof of Covid19 Antigen Lab test",
+         "properties": {
+            "countryOfTest": {
+               "type": "string"
+            },
+            "dateOfResult": {
+               "type": "string"
+            },
+            "dateOfSample": {
+               "type": "string"
+            },
+            "disease": {
+               "type": "string"
+            },
+            "linkedTestCertificate": {
+               "type": "string"
+            },
+            "recipient": {
+               "type": "string"
+            },
+            "stateOfTest": {
+               "type": "string"
+            },
+            "testCommercialName": {
+               "type": "string"
+            },
+            "testDescription": {
+               "type": "string"
+            },
+            "testManufacturer": {
+               "type": "string"
+            },
+            "testResult": {
+               "type": "string"
+            },
+            "testType": {
+               "type": "string"
+            },
+            "testingCenter": {
+               "type": "string"
+            }
+         },
+         "required": [
+            "linkedTestCertificate",
+            "recipient",
+            "disease",
+            "testDescription",
+            "testType",
+            "testCommercialName",
+            "testManufacturer",
+            "dateOfSample",
+            "dateOfResult",
+            "testResult",
+            "testingCenter",
+            "stateOfTest",
+            "countryOfTest"
+         ],
+         "title": "GHPAntigenTestCredential",
+         "type": "object"
+      },
+      "GHPCitizenRecoveryCredential": {
+         "additionalProperties": false,
+         "description": "Proof of recovery from Covid19",
+         "properties": {
+            "certificateNumber": {
+               "type": "string"
+            },
+            "countryOfTest": {
+               "type": "string"
+            },
+            "dateOfFirstPositiveResult": {
+               "type": "string"
+            },
+            "disease": {
+               "type": "string"
+            },
+            "linkedTestCertificate": {
+               "type": "string"
+            },
+            "recipient": {
+               "type": "string"
+            },
+            "stateOfTest": {
+               "type": "string"
+            }
+         },
+         "required": [
+            "linkedTestCertificate",
+            "recipient",
+            "disease",
+            "dateOfFirstPositiveResult",
+            "stateOfTest",
+            "countryOfTest",
+            "certificateNumber"
+         ],
+         "title": "GHPCitizenRecoveryCredential",
+         "type": "object"
+      },
+      "GHPEventRecipient": {
+         "additionalProperties": false,
+         "description": "Minimal Subject information mapped to CA baseline or CVC Profile",
+         "properties": {
+            "birthDate": {
+               "type": "string"
+            },
+            "familyName": {
+               "type": "string"
+            },
+            "givenName": {
+               "type": "string"
+            }
+         },
+         "required": [
+            "givenName",
+            "familyName",
+            "birthDate"
+         ],
+         "title": "GHPEventRecipient",
+         "type": "object"
+      },
+      "GHPVaccinationCertificate": {
+         "additionalProperties": false,
+         "description": "Minimal vaccination event information mapped to CA Baseline or CVC FHIR Profile",
+         "properties": {
+            "administeringCentre": {
+               "type": "string"
+            },
+            "batchNumber": {
+               "type": "string"
+            },
+            "certificateNumber": {
+               "type": "string"
+            },
+            "countryOfVaccination": {
+               "type": "string"
+            },
+            "dateOfVaccination": {
+               "type": "string"
+            },
+            "healthProfessional": {
+               "type": "string"
+            },
+            "nextVaccinationDate": {
+               "type": "string"
+            },
+            "order": {
+               "type": "string"
+            },
+            "vaccine": {
+               "type": "string"
+            }
+         },
+         "required": [
+            "administeringCentre",
+            "batchNumber",
+            "countryOfVaccination",
+            "dateOfVaccination",
+            "healthProfessional",
+            "order",
+            "vaccine",
+            "certificateNumber"
+         ],
+         "title": "GHPVaccinationCertificate",
+         "type": "object"
+      },
+      "GHPVaccinationCredential": {
+         "additionalProperties": false,
+         "description": "Good Health Pass Vaccination credential",
+         "properties": {
+            "countryOfVaccination": {
+               "type": "string"
+            },
+            "cvxCode": {
+               "type": "string"
+            },
+            "dateOfVaccination": {
+               "type": "string"
+            },
+            "disease": {
+               "type": "string"
+            },
+            "doseNumber": {
+               "type": "string"
+            },
+            "dosesPerCycle": {
+               "type": "string"
+            },
+            "linkedVaccineCertificate": {
+               "type": "string"
+            },
+            "marketingAuthorizationHolder": {
+               "type": "string"
+            },
+            "medicinalProductName": {
+               "type": "string"
+            },
+            "recipient": {
+               "type": "string"
+            },
+            "stateOfVaccination": {
+               "type": "string"
+            },
+            "vaccineDescription": {
+               "type": "string"
+            },
+            "vaccineType": {
+               "type": "string"
+            }
+         },
+         "required": [
+            "linkedVaccineCertificate",
+            "recipient",
+            "disease",
+            "vaccineDescription",
+            "vaccineType",
+            "medicinalProductName",
+            "cvxCode",
+            "marketingAuthorizationHolder",
+            "doseNumber",
+            "dosesPerCycle",
+            "dateOfVaccination",
+            "stateOfVaccination",
+            "countryOfVaccination"
+         ],
+         "title": "GHPVaccinationCredential",
+         "type": "object"
+      },
+      "GoodHealthPass": {
+         "additionalProperties": false,
+         "description": "Good Health Pass created from one or more artifacts (vax, test, recovery credentials via BRE)",
+         "properties": {
+            "linkedCredential": {
+               "items": {
+                  "type": "string"
+               },
+               "type": "array"
+            },
+            "recipient": {
+               "type": "string"
+            },
+            "status": {
+               "type": "string"
+            }
+         },
+         "required": [
+            "linkedCredential",
+            "recipient",
+            "status"
+         ],
+         "title": "GoodHealthPass",
+         "type": "object"
+      }
+   },
+   "properties": {},
+   "title": "ghp-vocab-ca",
+   "type": "object"
+}
+

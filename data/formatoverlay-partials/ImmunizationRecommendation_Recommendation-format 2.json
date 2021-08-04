@@ -1,9 +1,0 @@
-{
-  "resourceName": "ImmunizationRecommendation_Recommendation",
-  "attr_formats": {
-    "ImmunizationRecommendation_Recommendation.doseNumberPositiveInt": "^[1-9][0-9]*$",
-    "ImmunizationRecommendation_Recommendation.seriesDosesPositiveInt": "^[1-9][0-9]*$",
-    "ImmunizationRecommendation_Recommendation.seriesDosesString": "^[ \\r\\n\\t\\S]+$",
-    "ImmunizationRecommendation_Recommendation.doseNumberString": "^[ \\r\\n\\t\\S]+$"
-  }
-}

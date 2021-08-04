@@ -1,9 +1,0 @@
-{
-  "resourceName": "ImmunizationEvaluation",
-  "attr_formats": {
-    "ImmunizationEvaluation.seriesDosesPositiveInt": "^[1-9][0-9]*$",
-    "ImmunizationEvaluation.doseNumberPositiveInt": "^[1-9][0-9]*$",
-    "ImmunizationEvaluation.seriesDosesString": "^[ \\r\\n\\t\\S]+$",
-    "ImmunizationEvaluation.doseNumberString": "^[ \\r\\n\\t\\S]+$"
-  }
-}
